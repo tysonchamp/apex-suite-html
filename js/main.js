@@ -155,3 +155,39 @@ document.addEventListener('DOMContentLoaded', function() {
     inputLoc.addEventListener('input', calculate);
     inputStaff.addEventListener('input', calculate);
 });
+
+
+// Live FAQ Search Logic
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('faq-search');
+    if (!searchInput) return;
+
+    searchInput.addEventListener('input', function(e) {
+        const term = e.target.value.toLowerCase().trim();
+        const categories = document.querySelectorAll('.faq-category');
+
+        categories.forEach(category => {
+            const items = category.querySelectorAll('.accordion-item');
+            let categoryHasVisibleItem = false;
+
+            items.forEach(item => {
+                const question = item.querySelector('.faq-question-text').textContent.toLowerCase();
+                const answer = item.querySelector('.faq-answer-text').textContent.toLowerCase();
+                
+                if (question.includes(term) || answer.includes(term)) {
+                    item.style.display = 'block';
+                    categoryHasVisibleItem = true;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            // Hide the entire category box if no questions match
+            if (categoryHasVisibleItem) {
+                category.style.display = 'block';
+            } else {
+                category.style.display = 'none';
+            }
+        });
+    });
+});

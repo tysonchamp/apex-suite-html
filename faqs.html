@@ -139,137 +139,610 @@
                     class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
                 <input
                     class="w-full h-14 pl-12 pr-4 rounded-full border border-outline-variant bg-surface-container-lowest text-on-surface focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/20 transition-all shadow-[0_4px_20px_rgba(0,33,77,0.06)] font-body-md text-body-md placeholder-outline"
-                    placeholder="Search for answers..." type="text" />
+                    placeholder="Search for answers..." type="text" id="faq-search" />
             </div>
         </div>
         <!-- FAQ Categories Bento -->
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-xl">
-            <!-- Security & Compliance -->
-            <div
-                class="md:col-span-2 bg-surface-container-lowest rounded-xl p-md border border-surface-container-high shadow-[0_4px_20px_rgba(0,33,77,0.06)] hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-gutter mb-xl">
+
+            <!-- General Questions -->
+            <div class="faq-category md:col-span-2 bg-surface-container-lowest rounded-xl p-md border border-surface-container-high shadow-[0_4px_20px_rgba(0,33,77,0.06)] hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow">
                 <div class="flex items-center gap-sm mb-md">
-                    <div
-                        class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
-                        <span class="material-symbols-outlined">shield_lock</span>
+                    <div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+                        <span class="material-symbols-outlined">help</span>
                     </div>
-                    <h2 class="font-headline-md text-headline-md text-on-surface">Security &amp; Compliance</h2>
+                    <h2 class="font-headline-md text-headline-md text-on-surface">General Questions</h2>
                 </div>
                 <div class="space-y-sm">
+
                     <div class="accordion-item border-b border-surface-container-high pb-sm">
-                        <button
-                            class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm"
-                            onclick="toggleAccordion(this)">
-                            Is my data encrypted at rest and in transit?
-                            <span class="material-symbols-outlined accordion-icon text-outline">expand_more</span>
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">What is Apex Suite Cloud?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
                         </button>
                         <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
-                            Yes, all customer data is encrypted at rest using AES-256 encryption. Data in transit is
-                            protected using TLS 1.2 or higher, ensuring secure communication between your infrastructure
-                            and Apex Cloud.
+                            <span class="faq-answer-text">Apex Suite Cloud is a comprehensive suite of cloud-based ERP systems tailored for various industries including retail, service sectors, and large enterprises.</span>
                         </div>
                     </div>
+
                     <div class="accordion-item border-b border-surface-container-high pb-sm">
-                        <button
-                            class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm"
-                            onclick="toggleAccordion(this)">
-                            What compliance certifications do you hold?
-                            <span class="material-symbols-outlined accordion-icon text-outline">expand_more</span>
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Do I need to download any software?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
                         </button>
                         <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
-                            Apex Suite Cloud maintains rigorous compliance standards, including SOC 2 Type II, ISO
-                            27001, HIPAA, and GDPR readiness. Detailed compliance reports are available upon request for
-                            Enterprise customers.
+                            <span class="faq-answer-text">No, Apex Suite Cloud is 100% web-based. You can access it securely from any web browser on any device without downloading anything.</span>
                         </div>
                     </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Is there a mobile app available?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, we offer native Android and iOS mobile applications for our Web+Mobile and Enterprise packages, empowering you to manage your business on the go.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Do I need an active internet connection?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, as a cloud-based ERP, a stable internet connection is required to sync your data in real-time across all your devices and users.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Can I access my account from multiple devices?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Absolutely. You can log in from your computer, tablet, or smartphone simultaneously. All data syncs in real-time.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Are there any hidden setup fees?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">No, our pricing is completely transparent. The yearly subscription covers everything, including standard setup and onboarding.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Do you offer a free trial?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">We offer guided live demos so you can see exactly how the software works for your specific business needs before committing.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">What kind of customer support do you offer?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">We provide email and chat support for all plans, and 24/7 priority phone support and a dedicated account manager for Enterprise clients.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Will it work on my Mac or iPad?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes! Since the main interface is web-based, it works perfectly on macOS, iOS, Windows, and Android.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Can I upgrade my plan later?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, you can upgrade your plan at any time. Your subscription will simply be prorated based on the remaining months.</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <!-- Integration -->
-            <div
-                class="md:col-span-2 bg-surface-container-lowest rounded-xl p-md border border-surface-container-high shadow-[0_4px_20px_rgba(0,33,77,0.06)] hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow">
+
+            <!-- Lite Inventory ERP -->
+            <div class="faq-category md:col-span-2 bg-surface-container-lowest rounded-xl p-md border border-surface-container-high shadow-[0_4px_20px_rgba(0,33,77,0.06)] hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow">
                 <div class="flex items-center gap-sm mb-md">
-                    <div
-                        class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
-                        <span class="material-symbols-outlined">integration_instructions</span>
+                    <div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+                        <span class="material-symbols-outlined">storefront</span>
                     </div>
-                    <h2 class="font-headline-md text-headline-md text-on-surface">Integration</h2>
+                    <h2 class="font-headline-md text-headline-md text-on-surface">Lite Inventory ERP</h2>
                 </div>
                 <div class="space-y-sm">
+
                     <div class="accordion-item border-b border-surface-container-high pb-sm">
-                        <button
-                            class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm"
-                            onclick="toggleAccordion(this)">
-                            Do you offer RESTful APIs?
-                            <span class="material-symbols-outlined accordion-icon text-outline">expand_more</span>
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">What type of businesses is Lite Inventory ERP for?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
                         </button>
                         <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
-                            Yes, our comprehensive REST API allows full programmatic access to Apex Suite features. We
-                            provide extensive documentation, SDKs in major languages, and dedicated developer support.
+                            <span class="faq-answer-text">It is perfectly suited for micro to small stock-based businesses such as garments stores, groceries, hardware stores, and mobile shops.</span>
                         </div>
                     </div>
+
                     <div class="accordion-item border-b border-surface-container-high pb-sm">
-                        <button
-                            class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm"
-                            onclick="toggleAccordion(this)">
-                            Can I connect with third-party SSO providers?
-                            <span class="material-symbols-outlined accordion-icon text-outline">expand_more</span>
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Does it support thermal receipt printers?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
                         </button>
                         <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
-                            Absolutely. We support SAML 2.0 and OIDC integrations with major identity providers
-                            including Okta, Azure AD, and Google Workspace on Pro and Enterprise tiers.
+                            <span class="faq-answer-text">Yes, the POS system natively supports both standard A4 printers and 3-inch thermal receipt printers.</span>
                         </div>
                     </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Can I generate custom barcodes?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, you can auto-generate and print custom tracking barcodes for your inventory directly from the system.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Does it handle batch-wise pricing?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Absolutely. You can manage different pricing batches for older vs. newer stock seamlessly to ensure accurate margins.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Is GST billing supported?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, the system automatically calculates GST and generates fully compliant tax invoices.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Can I manage customer credit (Udhar)?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, the system includes a comprehensive credit ledger to manage customer credit accounts and easily clear dues.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Does it track my suppliers?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, you can manage supplier details, log incoming inventory directly from purchase invoices, and track outstanding supplier payments.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">How many staff accounts can I create?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">You can create unlimited role-based staff logins (cashiers, managers, admins) to ensure proper access control.</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <!-- Billing -->
-            <div
-                class="md:col-span-2 bg-surface-container-lowest rounded-xl p-md border border-surface-container-high shadow-[0_4px_20px_rgba(0,33,77,0.06)] hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow">
+
+            <!-- Service Sector ERP -->
+            <div class="faq-category md:col-span-2 bg-surface-container-lowest rounded-xl p-md border border-surface-container-high shadow-[0_4px_20px_rgba(0,33,77,0.06)] hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow">
                 <div class="flex items-center gap-sm mb-md">
-                    <div
-                        class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+                    <div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+                        <span class="material-symbols-outlined">handyman</span>
+                    </div>
+                    <h2 class="font-headline-md text-headline-md text-on-surface">Service Sector ERP</h2>
+                </div>
+                <div class="space-y-sm">
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">What businesses benefit from Service Sector ERP?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">It is tailored for repair shops, agencies, service providers, and any business where time, tasks, and client communication are the core products.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Can I generate quotations?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, you can easily generate professional quotations and convert them into GST invoices with a single click once approved.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">How does the reminder system work?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">You can set SMS or email reminders for upcoming service appointments, follow-ups, or invoice due dates. These sync with a visual Calendar view.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Is there a CRM included?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, a full CRM is included. It tracks customer interaction history, conversation logs, and lead status from initial contact to closed deal.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Can I manage my daily expenses?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, there is a dedicated expense management module to log daily operational costs and generate accurate Profit & Loss reports.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">How does task management work?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">You can create to-do lists and assign specific tasks to your staff or field technicians. They can update the status via their mobile app.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Can I see reports based on specific customers?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, the system offers customer-wise detailed reporting so you can analyze your most profitable clients.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Does the mobile app help field technicians?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, the Web+Mobile package allows field agents to log service updates, view tasks, and check client history directly from their smartphones.</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Enterprise ERP -->
+            <div class="faq-category md:col-span-2 bg-surface-container-lowest rounded-xl p-md border border-surface-container-high shadow-[0_4px_20px_rgba(0,33,77,0.06)] hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow">
+                <div class="flex items-center gap-sm mb-md">
+                    <div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+                        <span class="material-symbols-outlined">corporate_fare</span>
+                    </div>
+                    <h2 class="font-headline-md text-headline-md text-on-surface">Enterprise ERP</h2>
+                </div>
+                <div class="space-y-sm">
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">What is the Enterprise ERP built for?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">It is a highly customizable infrastructure designed for medium to large businesses, franchises, and multi-location operations.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Can I manage multiple franchises in one account?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, the system allows centralized management of multiple businesses and locations from a single admin dashboard.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Does it support Inter-company sales?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, you can easily handle sales, returns, and stock transfers across your own different corporate entities or franchise locations.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">How does E-way bill generation work?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">The ERP integrates directly with compliance portals to auto-generate E-way bills and E-invoices seamlessly during the B2B sales workflow.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Can I upload images of my products?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, the Enterprise package allows you to map product images directly to their barcodes. You can even use the mobile app to quickly take and upload photos.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">What is 'Item Split & Merge'?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">It is an advanced tool that allows you to purchase items in bulk (like a massive roll of fabric) and split them into smaller retail units, tracking the cost accurately.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Can I customize the invoice designs?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, we offer over 25 invoice and barcode label designs out-of-the-box, and we offer custom HTML/CSS design modifications upon request.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Does it track my daily cash register?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, the POS terminal includes robust daily cash register management to reconcile drawer cash per shift.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">How many reports are available?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">There are 25+ deep business analysis reports available. All reports can be exported to Excel for external analysis.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">How do I add more locations?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">You can scale instantly using your admin dashboard. Extra locations, businesses, and staff can be added dynamically based on our transparent pricing model.</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Billing & Subscriptions -->
+            <div class="faq-category md:col-span-2 bg-surface-container-lowest rounded-xl p-md border border-surface-container-high shadow-[0_4px_20px_rgba(0,33,77,0.06)] hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow">
+                <div class="flex items-center gap-sm mb-md">
+                    <div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
                         <span class="material-symbols-outlined">payments</span>
                     </div>
-                    <h2 class="font-headline-md text-headline-md text-on-surface">Billing</h2>
+                    <h2 class="font-headline-md text-headline-md text-on-surface">Billing & Subscriptions</h2>
                 </div>
                 <div class="space-y-sm">
+
                     <div class="accordion-item border-b border-surface-container-high pb-sm">
-                        <button
-                            class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm"
-                            onclick="toggleAccordion(this)">
-                            How is usage calculated?
-                            <span class="material-symbols-outlined accordion-icon text-outline">expand_more</span>
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">What payment methods do you accept?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
                         </button>
                         <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
-                            Usage is calculated dynamically based on active API requests and stored gigabytes per
-                            billing cycle. You can view real-time usage metrics in the Billing Dashboard.
+                            <span class="faq-answer-text">We accept all major credit/debit cards, UPI, net banking, and direct bank transfers for yearly subscriptions.</span>
                         </div>
                     </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Is there a setup fee?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">No, there are no hidden setup fees. Your yearly subscription covers your software access and standard onboarding.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">What happens when my subscription expires?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">We will notify you 30 days before expiration. If you choose not to renew, your account will be paused, but your data is kept safe for 90 days.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Can I switch from Lite to Enterprise?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, as your business grows, you can upgrade your plan. We will smoothly migrate your account to the Enterprise tier and prorate your billing.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Do I get a discount for multiple years?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, please speak with our sales team via the Contact Us page for customized multi-year discounts.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">How are 'Extra Businesses' billed in Enterprise?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">If you are on the Enterprise plan, adding an extra business costs ₹10,000/yr and automatically includes 1 extra location and 1 extra staff allowance.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Are software updates included?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, as a cloud service, you get all new features, security patches, and performance updates automatically for free.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Do you offer refunds?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Since we provide comprehensive live demos and a transparent onboarding process, we do not typically offer refunds once a yearly contract is initiated.</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <!-- Account Management -->
-            <div
-                class="md:col-span-2 bg-surface-container-lowest rounded-xl p-md border border-surface-container-high shadow-[0_4px_20px_rgba(0,33,77,0.06)] hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow">
+
+            <!-- Tech & Data Security -->
+            <div class="faq-category md:col-span-2 bg-surface-container-lowest rounded-xl p-md border border-surface-container-high shadow-[0_4px_20px_rgba(0,33,77,0.06)] hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow">
                 <div class="flex items-center gap-sm mb-md">
-                    <div
-                        class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
-                        <span class="material-symbols-outlined">manage_accounts</span>
+                    <div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+                        <span class="material-symbols-outlined">shield_lock</span>
                     </div>
-                    <h2 class="font-headline-md text-headline-md text-on-surface">Account Management</h2>
+                    <h2 class="font-headline-md text-headline-md text-on-surface">Tech & Data Security</h2>
                 </div>
                 <div class="space-y-sm">
+
                     <div class="accordion-item border-b border-surface-container-high pb-sm">
-                        <button
-                            class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm"
-                            onclick="toggleAccordion(this)">
-                            How do I add team members?
-                            <span class="material-symbols-outlined accordion-icon text-outline">expand_more</span>
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Where is my data stored?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
                         </button>
                         <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
-                            Administrators can invite new users via the 'Team Management' section in settings. You can
-                            assign specific roles (Admin, Editor, Viewer) to control access levels.
+                            <span class="faq-answer-text">Your data is securely stored on enterprise-grade cloud servers (AWS/GCP) located in highly secure, compliant data centers.</span>
                         </div>
                     </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Is my data encrypted?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, all data is encrypted at rest using AES-256 and in transit using TLS 1.2+, ensuring bank-grade security.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Do you perform backups?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, we perform automated daily backups of your entire database across multiple geographically distributed servers to prevent data loss.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Who owns my data?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">You retain 100% ownership of your data. Apex Suite merely acts as the secure processor of your information.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Can I export my data?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, you can export your critical reports, customer lists, and inventory logs to Excel or CSV formats at any time.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">What happens if my internet goes down?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Since it is a cloud application, you will need internet access to sync data. However, our servers maintain 99.9% uptime to ensure we are always ready when your internet returns.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">Is the software GDPR compliant?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">Yes, our infrastructure and data handling practices are designed to be fully compliant with major global privacy regulations.</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                            <span class="faq-question-text pr-4">How do you handle software bugs?</span>
+                            <span class="material-symbols-outlined accordion-icon text-outline flex-shrink-0">expand_more</span>
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            <span class="faq-answer-text">We have a dedicated QA team and 24/7 monitoring. Critical bugs are patched immediately and deployed silently without disrupting your operations.</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
         </div>
         <!-- Still Need Help Section -->
         <div class="bg-surface-container-low rounded-xl p-lg text-center border border-surface-container-high">
