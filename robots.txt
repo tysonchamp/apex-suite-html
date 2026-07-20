@@ -1,0 +1,7 @@
+# apexsuitecloud.com robots.txt
+# Modern SEO Best Practices: Allow all access so Googlebot can fully render JS/CSS
+User-agent: *
+Allow: /
+
+# Provide sitemap for faster discovery
+Sitemap: https://www.apexsuitecloud.com/sitemap.xml

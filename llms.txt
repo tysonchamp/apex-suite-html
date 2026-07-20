@@ -1,0 +1,27 @@
+# Apex Suite Cloud
+
+> The intelligent foundation for modern enterprise operations. Scalable, secure, and predictive.
+
+Apex Suite Cloud provides tailored Cloud ERP software solutions for modern businesses. We offer three primary platforms:
+- **Lite Inventory ERP**: Ideal for small retail and stock-based businesses (garments, groceries, hardware).
+- **Service Sector ERP**: Built for service-based businesses, repair centers, and agencies.
+- **Enterprise ERP**: Scalable operations for medium to large enterprises, B2B sales, and franchises.
+
+## Key Features
+- 100% Cloud-Based (Zero Downloads)
+- Bank-Grade Security (AES-256 Encryption)
+- Free Data Migration Support
+- 24/7 Priority Support
+- Advanced Analytics & Reporting
+
+## Important Links
+- [Home Page](https://apexsuitecloud.com/)
+- [Pricing](https://apexsuitecloud.com/pricing)
+- [Contact Us](https://apexsuitecloud.com/contact-us)
+- [Terms of Service](https://apexsuitecloud.com/terms)
+- [Privacy Policy](https://apexsuitecloud.com/privacy)
+
+## Contact Information
+- **Support & General Inquiries**: info@apexsuitecloud.com
+- **Sales Phone**: +91 74399 55986
+- **Headquarters**: Sector V, Salt Lake, Kolkata, West Bengal 700091, India
