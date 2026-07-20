@@ -112,28 +112,41 @@
     </style>
 </head>
 <body class="antialiased min-h-screen flex flex-col">
-<!-- TopNavBar -->
-<header class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/20 dark:border-white/10 shadow-sm">
+<!-- TopNavBar Component -->
+<nav class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/20 dark:border-white/10 shadow-sm transition-all duration-300">
 <div class="flex justify-between items-center h-16 px-margin-desktop max-w-[1440px] mx-auto">
-<!-- Brand Logo -->
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary dark:text-primary-fixed" style="font-variation-settings: 'FILL' 1;">hexagon</span>
-<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight">Apex Suite Cloud</span>
-</div>
-<!-- Navigation Links (Desktop) -->
-<nav class="hidden md:flex gap-lg h-full">
-<a class="flex items-center h-full font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-sm" href="#">Solutions</a>
-<a class="flex items-center h-full font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-sm" href="#">Platform</a>
-<a class="flex items-center h-full font-label-md text-label-md text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 px-sm" href="#">Resources</a>
-<a class="flex items-center h-full font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-sm" href="#">Pricing</a>
-</nav>
-<!-- Actions -->
 <div class="flex items-center gap-md">
-<button class="hidden md:block font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors">Log In</button>
-<button class="bg-primary text-on-primary font-label-md text-label-md px-md py-sm rounded-DEFAULT hover:bg-primary-container active:scale-95 transition-all shadow-sm">Book a Demo</button>
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity" href="#">
+                    Apex Suite Cloud
+                </a>
+</div>
+<div class="hidden md:flex items-center gap-gutter font-label-md text-label-md">
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="#">
+                    Solutions
+                </a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="#">
+                    Platform
+                </a>
+<a class="text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 pt-2 rounded-t-md active:scale-95 transition-transform" href="#">
+                    Resources
+                </a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="#">
+                    Pricing
+                </a>
+</div>
+<div class="flex items-center gap-sm">
+<button class="hidden md:inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 border border-outline-variant text-primary hover:bg-[#E6F0FF] rounded-lg transition-colors bg-transparent active:scale-95 transition-transform">
+                    Log In
+                </button>
+<button class="inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 bg-[#0052cc] text-white hover:bg-primary rounded-lg shadow-sm transition-colors active:scale-95 transition-transform">
+                    Book a Demo
+                </button>
+<button class="md:hidden p-2 text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
 </div>
 </div>
-</header>
+</nav>
 <!-- Main Content -->
 <main class="flex-grow pt-32 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto w-full">
 <!-- Header Section -->

@@ -128,23 +128,40 @@
 </head>
 <body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col antialiased">
 <!-- TopNavBar Component -->
-<header class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/20 dark:border-white/10 shadow-sm">
+<nav class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/20 dark:border-white/10 shadow-sm transition-all duration-300">
 <div class="flex justify-between items-center h-16 px-margin-desktop max-w-[1440px] mx-auto">
 <div class="flex items-center gap-md">
-<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed" href="#">Apex Suite Cloud</a>
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity" href="#">
+                    Apex Suite Cloud
+                </a>
 </div>
-<nav class="hidden md:flex items-center gap-md">
-<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary font-label-md text-label-md active:scale-95 transition-transform" href="#">Solutions</a>
-<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary font-label-md text-label-md active:scale-95 transition-transform" href="#">Platform</a>
-<a class="text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 font-label-md text-label-md active:scale-95 transition-transform" href="#">Resources</a>
-<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary font-label-md text-label-md active:scale-95 transition-transform" href="#">Pricing</a>
-</nav>
+<div class="hidden md:flex items-center gap-gutter font-label-md text-label-md">
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="#">
+                    Solutions
+                </a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="#">
+                    Platform
+                </a>
+<a class="text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 pt-2 rounded-t-md active:scale-95 transition-transform" href="#">
+                    Resources
+                </a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="#">
+                    Pricing
+                </a>
+</div>
 <div class="flex items-center gap-sm">
-<button class="hidden md:inline-flex items-center justify-center h-10 px-4 font-label-md text-label-md text-primary bg-transparent border border-surface-dim rounded hover:bg-surface-container-low transition-colors duration-200">Log In</button>
-<button class="inline-flex items-center justify-center h-10 px-4 font-label-md text-label-md text-on-primary bg-primary rounded hover:bg-primary-container transition-colors duration-200 shadow-sm">Book a Demo</button>
+<button class="hidden md:inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 border border-outline-variant text-primary hover:bg-[#E6F0FF] rounded-lg transition-colors bg-transparent active:scale-95 transition-transform">
+                    Log In
+                </button>
+<button class="inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 bg-[#0052cc] text-white hover:bg-primary rounded-lg shadow-sm transition-colors active:scale-95 transition-transform">
+                    Book a Demo
+                </button>
+<button class="md:hidden p-2 text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
 </div>
 </div>
-</header>
+</nav>
 <!-- Main Content -->
 <main class="flex-grow pt-24 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1024px] mx-auto w-full">
 <!-- Hero & Search -->
