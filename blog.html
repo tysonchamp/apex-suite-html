@@ -1,230 +1,336 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Blog - Apex Suite Cloud</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="js/tailwind-config.js"></script>
+<html class="light" lang="en">
 
-<link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Blog - Apex Suite Cloud</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="js/tailwind-config.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="antialiased min-h-screen flex flex-col">
-<!-- TopNavBar Component -->
-<nav class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/20 dark:border-white/10 shadow-sm transition-all duration-300">
-<div class="flex justify-between items-center h-16 px-margin-desktop max-w-[1440px] mx-auto">
-<div class="flex items-center gap-md">
-<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity" href="index.html">
+    <!-- TopNavBar Component -->
+    <nav
+        class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/20 dark:border-white/10 shadow-sm transition-all duration-300">
+        <div class="flex justify-between items-center h-16 px-margin-desktop max-w-[1440px] mx-auto">
+            <div class="flex items-center gap-md">
+                <a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity"
+                    href="index.html">
                     Apex Suite Cloud
                 </a>
-</div>
-<div class="hidden md:flex items-center gap-gutter font-label-md text-label-md">
-<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="#">
+            </div>
+            <div class="hidden md:flex items-center gap-gutter font-label-md text-label-md">
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform"
+                    href="#">
                     Solutions
                 </a>
-<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="#">
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform"
+                    href="#">
                     Platform
                 </a>
-<a class="text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 pt-2 rounded-t-md active:scale-95 transition-transform" href="blog.html">
+                <a class="text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 pt-2 rounded-t-md active:scale-95 transition-transform"
+                    href="blog.html">
                     Resources
                 </a>
-<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="pricing.html">
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform"
+                    href="pricing.html">
                     Pricing
                 </a>
-</div>
-<div class="flex items-center gap-sm">
-<button class="hidden md:inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 border border-outline-variant text-primary hover:bg-[#E6F0FF] rounded-lg transition-colors bg-transparent active:scale-95 transition-transform">
+            </div>
+            <div class="flex items-center gap-sm">
+                <button
+                    class="hidden md:inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 border border-outline-variant text-primary hover:bg-[#E6F0FF] rounded-lg transition-colors bg-transparent active:scale-95 transition-transform">
                     Log In
                 </button>
-<button onclick="window.location.href='contact-us.html'" class="inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 bg-[#0052cc] text-white hover:bg-primary rounded-lg shadow-sm transition-colors active:scale-95 transition-transform">
+                <button onclick="window.location.href='contact-us.html'"
+                    class="inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 bg-[#0052cc] text-white hover:bg-primary rounded-lg shadow-sm transition-colors active:scale-95 transition-transform">
                     Book a Demo
                 </button>
-<button class="md:hidden p-2 text-on-surface-variant">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
-</div>
-</div>
-</nav>
-<!-- Main Content -->
-<main class="flex-grow pt-32 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto w-full">
-<!-- Header Section -->
-<div class="mb-lg text-center max-w-3xl mx-auto">
-<h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-background mb-sm">Insights &amp; Intelligence</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant">The latest perspectives on AI-driven enterprise transformation, platform architecture, and operational excellence.</p>
-</div>
-<!-- Featured Post (Bento style) -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-xl">
-<div class="md:col-span-8 rounded-xl overflow-hidden ambient-shadow bg-surface-container-lowest relative group cursor-pointer border border-surface-container-high">
-<div class="h-64 md:h-full w-full relative">
-<img class="object-cover w-full h-full absolute inset-0 transition-transform duration-700 group-hover:scale-105" data-alt="A futuristic data visualization depicting enterprise resource planning in a bright, light-filled corporate environment. High-tech holographic displays float in a pristine, white architectural space. Soft, ambient lighting creates an airy, trustworthy feel. Subtle ice blue and electric royal blue accents highlight key data points, conveying organized intelligence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7Co_zeEzkLam9MX7Ey9iUOwBH61ziNabiicgmru941_CUSd-dpDfYFCtqr2zgQMIEoibRwDVrEDYY7O9ELZu6behn6bbiIwe86I0CadQeQKjstRzdwyOdrgwi9xdNIOqp0CoDHl1zNXXisdcPLUMeWt0tBR5_yh5izHdhoCnhH2LuuWnBJfDBnC6zi4PjkVTc1kMXr5rkvZv_YPXst7l8fv-uiovoEh9UJuXR3xWqMGSKxxsfcRUoxKKfH7pgjolNOw8N3T1J3xk"/>
-<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/40 to-transparent"></div>
-</div>
-<div class="absolute bottom-0 left-0 p-lg w-full">
-<div class="flex items-center gap-sm mb-sm">
-<span class="bg-primary text-on-primary font-label-sm text-label-sm px-sm py-xs rounded-full">AI Strategy</span>
-<span class="text-inverse-primary font-label-sm text-label-sm flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span> 8 min read</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg text-on-primary mb-sm group-hover:text-primary-fixed transition-colors">The Autonomous Enterprise: Integrating LLMs into Core ERP Workflows</h2>
-<p class="font-body-md text-body-md text-on-primary-container max-w-2xl hidden md:block">Discover how top-tier organizations are moving beyond simple chatbots to embed deep learning models directly into supply chain, finance, and human capital systems.</p>
-</div>
-</div>
-<!-- Secondary Featured -->
-<div class="md:col-span-4 flex flex-col gap-gutter">
-<div class="flex-1 rounded-xl p-md bg-surface-container-lowest ambient-shadow-hover border border-surface-container-high cursor-pointer flex flex-col justify-between group">
-<div>
-<div class="flex items-center gap-sm mb-sm">
-<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-sm py-xs rounded-full">Fintech</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-background group-hover:text-primary transition-colors">Real-time Reconciliation at Scale</h3>
-</div>
-<div class="flex items-center gap-sm mt-md">
-<span class="text-outline font-label-sm text-label-sm">By Sarah Jenkins</span>
-<span class="text-outline font-label-sm text-label-sm">•</span>
-<span class="text-outline font-label-sm text-label-sm">Oct 12, 2024</span>
-</div>
-</div>
-<div class="flex-1 rounded-xl p-md bg-surface-container-lowest ambient-shadow-hover border border-surface-container-high cursor-pointer flex flex-col justify-between group relative overflow-hidden">
-<div class="absolute top-0 right-0 p-sm opacity-10 group-hover:opacity-20 transition-opacity">
-<span class="material-symbols-outlined text-primary text-[64px]" style="font-variation-settings: 'FILL' 1;">monitoring</span>
-</div>
-<div class="relative z-10">
-<div class="flex items-center gap-sm mb-sm">
-<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full">Operations</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-background group-hover:text-primary transition-colors">Optimizing Cloud Spend Post-Migration</h3>
-</div>
-<div class="flex items-center gap-sm mt-md relative z-10">
-<span class="text-outline font-label-sm text-label-sm">By David Chen</span>
-<span class="text-outline font-label-sm text-label-sm">•</span>
-<span class="text-outline font-label-sm text-label-sm">Oct 10, 2024</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Filters -->
-<div class="flex flex-wrap items-center gap-sm mb-lg pb-md border-b border-surface-container-high">
-<span class="font-label-md text-label-md text-on-surface-variant mr-sm">Filter by:</span>
-<button class="bg-primary-container text-on-primary-container font-label-md text-label-md px-md py-xs rounded-full border border-primary-container transition-colors">All Topics</button>
-<button class="bg-transparent text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md px-md py-xs rounded-full border border-outline-variant transition-colors">Artificial Intelligence</button>
-<button class="bg-transparent text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md px-md py-xs rounded-full border border-outline-variant transition-colors">ERP Systems</button>
-<button class="bg-transparent text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md px-md py-xs rounded-full border border-outline-variant transition-colors">Fintech</button>
-<button class="bg-transparent text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md px-md py-xs rounded-full border border-outline-variant transition-colors">Operations</button>
-</div>
-<!-- Blog Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter mb-xl">
-<!-- Card 1 -->
-<article class="bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow-hover border border-surface-container-high flex flex-col group cursor-pointer">
-<div class="h-48 overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A clean, abstract rendering of interconnected nodes and data streams in a pristine, bright environment. The nodes are connected by glowing blue lines against a very light ice-blue background, representing secure data architecture. High-contrast and professional aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSK-JoH-b3UpLgYKwbQ_W0rRfmhEFXbwx5HZigpIEr1K6lGwP59tsFzhT7u2CV7_DTxYliQtVF3Tu6FQ-iAn_cihiH3a78szrB4KnLKbPPbWdH_7J_zCFuScZrXg8ZfHg3SThwHsVouUbLz31_Vqo9doiWiJ4PZck9373bVHyWDIMR97BXr-niU3UQ1ivM_azBbckPxAAPORtdRDeAMQxqgOhKKJFLWB7Bq5JJrW4d-BMO52iyMpfUk8Ki-0vovZ6JGuNBovjQC6k"/>
-</div>
-<div class="p-md flex-grow flex flex-col">
-<div class="flex items-center justify-between mb-sm">
-<span class="text-primary font-label-sm text-label-sm bg-surface-container px-sm py-xs rounded">Architecture</span>
-<span class="text-outline font-label-sm text-label-sm">5 min read</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-background mb-sm group-hover:text-primary transition-colors">Microservices vs. Monolith: A Modern Perspective</h3>
-<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-md line-clamp-3">Re-evaluating architectural choices in the era of serverless computing and advanced container orchestration platforms.</p>
-<div class="flex items-center gap-sm mt-auto border-t border-surface-container pt-sm">
-<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-label-sm font-bold">AK</div>
-<span class="font-label-md text-label-md text-on-surface">Alex Kumar</span>
-</div>
-</div>
-</article>
-<!-- Card 2 -->
-<article class="bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow-hover border border-surface-container-high flex flex-col group cursor-pointer">
-<div class="h-48 overflow-hidden relative">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A high-tech digital workspace showing analytics dashboards on translucent screens floating in an airy, brightly lit white room. Elements of glassmorphism are visible in the interface design, with crisp blue and navy accents representing financial tech interfaces." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFVUffgBmaEkiK4_A8daYjnno0WjaNydhJbKx-lvh4PgnVFmqA5DRczMZud6d1bho-z6pqsU1F2SE8ccqCjf7g2TwFJx1iWaKPwqpY1spm9KqA0Wmz2g3AZYzfSSRjJjpnr2AtofdWHsE29IFHFUYe0UWql-sVaXz3jNzRjneNnyAkIxP0JGhJyZK9LmKDzI2fzceNdRXF_R_stLOFSFXPix47M079J78Aj0Xd8hPFWLdM4b7iTLLPO0ei7pwcCx97N74C1AWQX6o"/>
-<div class="absolute inset-0 border-[2px] border-transparent group-hover:border-primary/20 transition-colors pointer-events-none rounded-t-xl"></div>
-</div>
-<div class="p-md flex-grow flex flex-col">
-<div class="flex items-center justify-between mb-sm">
-<span class="text-primary font-label-sm text-label-sm bg-surface-container px-sm py-xs rounded ai-gradient-text font-bold">AI &amp; Analytics</span>
-<span class="text-outline font-label-sm text-label-sm">12 min read</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-background mb-sm group-hover:text-primary transition-colors">Predictive Modeling for Q4 Financial Forecasting</h3>
-<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-md line-clamp-3">Leveraging historical datasets and external market indicators to train robust predictive models for enterprise finance teams.</p>
-<div class="flex items-center gap-sm mt-auto border-t border-surface-container pt-sm">
-<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-label-sm font-bold">MR</div>
-<span class="font-label-md text-label-md text-on-surface">Maria Rodriguez</span>
-</div>
-</div>
-</article>
-<!-- Card 3 -->
-<article class="bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow-hover border border-surface-container-high flex flex-col group cursor-pointer">
-<div class="h-48 overflow-hidden bg-surface-container flex items-center justify-center">
-<span class="material-symbols-outlined text-[80px] text-primary/20 group-hover:text-primary/40 transition-colors group-hover:scale-110 duration-500">security</span>
-</div>
-<div class="p-md flex-grow flex flex-col">
-<div class="flex items-center justify-between mb-sm">
-<span class="text-primary font-label-sm text-label-sm bg-surface-container px-sm py-xs rounded">Security</span>
-<span class="text-outline font-label-sm text-label-sm">6 min read</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-background mb-sm group-hover:text-primary transition-colors">Zero-Trust Implementation Strategies</h3>
-<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-md line-clamp-3">Practical steps for transitioning legacy network architectures to a strict zero-trust model without disrupting operations.</p>
-<div class="flex items-center gap-sm mt-auto border-t border-surface-container pt-sm">
-<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-label-sm font-bold">JW</div>
-<span class="font-label-md text-label-md text-on-surface">James Wilson</span>
-</div>
-</div>
-</article>
-</div>
-<!-- Pagination -->
-<div class="flex justify-center items-center gap-sm mt-xl">
-<button class="w-10 h-10 rounded border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors disabled:opacity-50" disabled="">
-<span class="material-symbols-outlined text-[20px]">chevron_left</span>
-</button>
-<button class="w-10 h-10 rounded bg-primary text-on-primary font-label-md font-bold flex items-center justify-center">1</button>
-<button class="w-10 h-10 rounded border border-outline-variant flex items-center justify-center text-on-surface-variant font-label-md hover:bg-surface-container hover:text-primary transition-colors">2</button>
-<button class="w-10 h-10 rounded border border-outline-variant flex items-center justify-center text-on-surface-variant font-label-md hover:bg-surface-container hover:text-primary transition-colors">3</button>
-<span class="text-outline mx-xs">...</span>
-<button class="w-10 h-10 rounded border border-outline-variant flex items-center justify-center text-on-surface-variant font-label-md hover:bg-surface-container hover:text-primary transition-colors">12</button>
-<button class="w-10 h-10 rounded border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors">
-<span class="material-symbols-outlined text-[20px]">chevron_right</span>
-</button>
-</div>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container-low dark:bg-surface-container-highest border-t border-surface-variant dark:border-outline-variant transition-all duration-200">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-md w-full px-margin-mobile md:px-margin-desktop py-lg max-w-7xl mx-auto">
-<div>
-<a class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface mb-md block" href="index.html">Apex Suite Cloud</a>
-<p class="font-label-sm text-label-sm text-on-surface-variant mb-md max-w-xs">The intelligent foundation for modern enterprise operations. Scalable, secure, and predictive.</p>
-<div class="inline-flex items-center gap-xs bg-ice-blue border border-surface-variant rounded-full px-sm py-xs">
-<div class="w-2 h-2 rounded-full bg-primary-container"></div>
-<span class="font-label-sm text-on-surface">System Status: Operational</span>
-</div>
-</div>
-<div class="flex flex-col gap-sm">
-<span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Product</span>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Intelligent ERP</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Smart Billing</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Predictive CRM</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="pricing.html">Pricing</a>
-</div>
-<div class="flex flex-col gap-sm">
-<span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Company</span>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">About Us</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Careers</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="blog.html">Blog</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="contact-us.html">Contact</a>
-</div>
-<div class="flex flex-col gap-sm">
-<span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Legal</span>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Privacy Policy</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Terms of Service</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Security</a>
-</div>
-</div>
-<div class="border-t border-surface-variant w-full px-margin-mobile md:px-margin-desktop py-md max-w-7xl mx-auto flex justify-between items-center">
-<span class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Apex Suite Cloud. All rights reserved.</span>
-<div class="flex gap-sm">
-<!-- Social Placeholders -->
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">language</span></a>
-</div>
-</div>
-</footer>
-<script src="js/main.js"></script>
-</body></html>
+                <button class="md:hidden p-2 text-on-surface-variant">
+                    <span class="material-symbols-outlined" data-icon="menu">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="flex-grow pt-32 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto w-full">
+        <!-- Header Section -->
+        <div class="mb-lg text-center max-w-3xl mx-auto">
+            <h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-background mb-sm">Insights
+                &amp; Intelligence</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">The latest perspectives on AI-driven enterprise
+                transformation, platform architecture, and operational excellence.</p>
+        </div>
+        <!-- Featured Post (Bento style) -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-xl">
+            <div
+                class="md:col-span-8 rounded-xl overflow-hidden ambient-shadow bg-surface-container-lowest relative group cursor-pointer border border-surface-container-high">
+                <div class="h-64 md:h-full w-full relative">
+                    <img class="object-cover w-full h-full absolute inset-0 transition-transform duration-700 group-hover:scale-105"
+                        data-alt="A futuristic data visualization depicting enterprise resource planning in a bright, light-filled corporate environment. High-tech holographic displays float in a pristine, white architectural space. Soft, ambient lighting creates an airy, trustworthy feel. Subtle ice blue and electric royal blue accents highlight key data points, conveying organized intelligence."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7Co_zeEzkLam9MX7Ey9iUOwBH61ziNabiicgmru941_CUSd-dpDfYFCtqr2zgQMIEoibRwDVrEDYY7O9ELZu6behn6bbiIwe86I0CadQeQKjstRzdwyOdrgwi9xdNIOqp0CoDHl1zNXXisdcPLUMeWt0tBR5_yh5izHdhoCnhH2LuuWnBJfDBnC6zi4PjkVTc1kMXr5rkvZv_YPXst7l8fv-uiovoEh9UJuXR3xWqMGSKxxsfcRUoxKKfH7pgjolNOw8N3T1J3xk" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/40 to-transparent">
+                    </div>
+                </div>
+                <div class="absolute bottom-0 left-0 p-lg w-full">
+                    <div class="flex items-center gap-sm mb-sm">
+                        <span class="bg-primary text-on-primary font-label-sm text-label-sm px-sm py-xs rounded-full">AI
+                            Strategy</span>
+                        <span class="text-inverse-primary font-label-sm text-label-sm flex items-center gap-1"><span
+                                class="material-symbols-outlined text-[16px]">schedule</span> 8 min read</span>
+                    </div>
+                    <h2
+                        class="font-headline-lg text-headline-lg text-on-primary mb-sm group-hover:text-primary-fixed transition-colors">
+                        The Autonomous Enterprise: Integrating LLMs into Core ERP Workflows</h2>
+                    <p class="font-body-md text-body-md text-on-primary-container max-w-2xl hidden md:block">Discover
+                        how top-tier organizations are moving beyond simple chatbots to embed deep learning models
+                        directly into supply chain, finance, and human capital systems.</p>
+                </div>
+            </div>
+            <!-- Secondary Featured -->
+            <div class="md:col-span-4 flex flex-col gap-gutter">
+                <div
+                    class="flex-1 rounded-xl p-md bg-surface-container-lowest ambient-shadow-hover border border-surface-container-high cursor-pointer flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center gap-sm mb-sm">
+                            <span
+                                class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-sm py-xs rounded-full">Fintech</span>
+                        </div>
+                        <h3
+                            class="font-headline-md text-headline-md text-on-background group-hover:text-primary transition-colors">
+                            Real-time Reconciliation at Scale</h3>
+                    </div>
+                    <div class="flex items-center gap-sm mt-md">
+                        <span class="text-outline font-label-sm text-label-sm">By Sarah Jenkins</span>
+                        <span class="text-outline font-label-sm text-label-sm">•</span>
+                        <span class="text-outline font-label-sm text-label-sm">Oct 12, 2024</span>
+                    </div>
+                </div>
+                <div
+                    class="flex-1 rounded-xl p-md bg-surface-container-lowest ambient-shadow-hover border border-surface-container-high cursor-pointer flex flex-col justify-between group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-sm opacity-10 group-hover:opacity-20 transition-opacity">
+                        <span class="material-symbols-outlined text-primary text-[64px]"
+                            style="font-variation-settings: 'FILL' 1;">monitoring</span>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-sm mb-sm">
+                            <span
+                                class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full">Operations</span>
+                        </div>
+                        <h3
+                            class="font-headline-md text-headline-md text-on-background group-hover:text-primary transition-colors">
+                            Optimizing Cloud Spend Post-Migration</h3>
+                    </div>
+                    <div class="flex items-center gap-sm mt-md relative z-10">
+                        <span class="text-outline font-label-sm text-label-sm">By David Chen</span>
+                        <span class="text-outline font-label-sm text-label-sm">•</span>
+                        <span class="text-outline font-label-sm text-label-sm">Oct 10, 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Filters -->
+        <div class="flex flex-wrap items-center gap-sm mb-lg pb-md border-b border-surface-container-high">
+            <span class="font-label-md text-label-md text-on-surface-variant mr-sm">Filter by:</span>
+            <button
+                class="bg-primary-container text-on-primary-container font-label-md text-label-md px-md py-xs rounded-full border border-primary-container transition-colors">All
+                Topics</button>
+            <button
+                class="bg-transparent text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md px-md py-xs rounded-full border border-outline-variant transition-colors">Artificial
+                Intelligence</button>
+            <button
+                class="bg-transparent text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md px-md py-xs rounded-full border border-outline-variant transition-colors">ERP
+                Systems</button>
+            <button
+                class="bg-transparent text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md px-md py-xs rounded-full border border-outline-variant transition-colors">Fintech</button>
+            <button
+                class="bg-transparent text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md px-md py-xs rounded-full border border-outline-variant transition-colors">Operations</button>
+        </div>
+        <!-- Blog Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter mb-xl">
+            <!-- Card 1 -->
+            <article
+                class="bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow-hover border border-surface-container-high flex flex-col group cursor-pointer">
+                <div class="h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        data-alt="A clean, abstract rendering of interconnected nodes and data streams in a pristine, bright environment. The nodes are connected by glowing blue lines against a very light ice-blue background, representing secure data architecture. High-contrast and professional aesthetic."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSK-JoH-b3UpLgYKwbQ_W0rRfmhEFXbwx5HZigpIEr1K6lGwP59tsFzhT7u2CV7_DTxYliQtVF3Tu6FQ-iAn_cihiH3a78szrB4KnLKbPPbWdH_7J_zCFuScZrXg8ZfHg3SThwHsVouUbLz31_Vqo9doiWiJ4PZck9373bVHyWDIMR97BXr-niU3UQ1ivM_azBbckPxAAPORtdRDeAMQxqgOhKKJFLWB7Bq5JJrW4d-BMO52iyMpfUk8Ki-0vovZ6JGuNBovjQC6k" />
+                </div>
+                <div class="p-md flex-grow flex flex-col">
+                    <div class="flex items-center justify-between mb-sm">
+                        <span
+                            class="text-primary font-label-sm text-label-sm bg-surface-container px-sm py-xs rounded">Architecture</span>
+                        <span class="text-outline font-label-sm text-label-sm">5 min read</span>
+                    </div>
+                    <h3
+                        class="font-headline-md text-headline-md text-on-background mb-sm group-hover:text-primary transition-colors">
+                        Microservices vs. Monolith: A Modern Perspective</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-md line-clamp-3">
+                        Re-evaluating architectural choices in the era of serverless computing and advanced container
+                        orchestration platforms.</p>
+                    <div class="flex items-center gap-sm mt-auto border-t border-surface-container pt-sm">
+                        <div
+                            class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-label-sm font-bold">
+                            AK</div>
+                        <span class="font-label-md text-label-md text-on-surface">Alex Kumar</span>
+                    </div>
+                </div>
+            </article>
+            <!-- Card 2 -->
+            <article
+                class="bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow-hover border border-surface-container-high flex flex-col group cursor-pointer">
+                <div class="h-48 overflow-hidden relative">
+                    <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        data-alt="A high-tech digital workspace showing analytics dashboards on translucent screens floating in an airy, brightly lit white room. Elements of glassmorphism are visible in the interface design, with crisp blue and navy accents representing financial tech interfaces."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFVUffgBmaEkiK4_A8daYjnno0WjaNydhJbKx-lvh4PgnVFmqA5DRczMZud6d1bho-z6pqsU1F2SE8ccqCjf7g2TwFJx1iWaKPwqpY1spm9KqA0Wmz2g3AZYzfSSRjJjpnr2AtofdWHsE29IFHFUYe0UWql-sVaXz3jNzRjneNnyAkIxP0JGhJyZK9LmKDzI2fzceNdRXF_R_stLOFSFXPix47M079J78Aj0Xd8hPFWLdM4b7iTLLPO0ei7pwcCx97N74C1AWQX6o" />
+                    <div
+                        class="absolute inset-0 border-[2px] border-transparent group-hover:border-primary/20 transition-colors pointer-events-none rounded-t-xl">
+                    </div>
+                </div>
+                <div class="p-md flex-grow flex flex-col">
+                    <div class="flex items-center justify-between mb-sm">
+                        <span
+                            class="text-primary font-label-sm text-label-sm bg-surface-container px-sm py-xs rounded ai-gradient-text font-bold">AI
+                            &amp; Analytics</span>
+                        <span class="text-outline font-label-sm text-label-sm">12 min read</span>
+                    </div>
+                    <h3
+                        class="font-headline-md text-headline-md text-on-background mb-sm group-hover:text-primary transition-colors">
+                        Predictive Modeling for Q4 Financial Forecasting</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-md line-clamp-3">Leveraging
+                        historical datasets and external market indicators to train robust predictive models for
+                        enterprise finance teams.</p>
+                    <div class="flex items-center gap-sm mt-auto border-t border-surface-container pt-sm">
+                        <div
+                            class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-label-sm font-bold">
+                            MR</div>
+                        <span class="font-label-md text-label-md text-on-surface">Maria Rodriguez</span>
+                    </div>
+                </div>
+            </article>
+            <!-- Card 3 -->
+            <article
+                class="bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow-hover border border-surface-container-high flex flex-col group cursor-pointer">
+                <div class="h-48 overflow-hidden bg-surface-container flex items-center justify-center">
+                    <span
+                        class="material-symbols-outlined text-[80px] text-primary/20 group-hover:text-primary/40 transition-colors group-hover:scale-110 duration-500">security</span>
+                </div>
+                <div class="p-md flex-grow flex flex-col">
+                    <div class="flex items-center justify-between mb-sm">
+                        <span
+                            class="text-primary font-label-sm text-label-sm bg-surface-container px-sm py-xs rounded">Security</span>
+                        <span class="text-outline font-label-sm text-label-sm">6 min read</span>
+                    </div>
+                    <h3
+                        class="font-headline-md text-headline-md text-on-background mb-sm group-hover:text-primary transition-colors">
+                        Zero-Trust Implementation Strategies</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-md line-clamp-3">Practical
+                        steps for transitioning legacy network architectures to a strict zero-trust model without
+                        disrupting operations.</p>
+                    <div class="flex items-center gap-sm mt-auto border-t border-surface-container pt-sm">
+                        <div
+                            class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-label-sm font-bold">
+                            JW</div>
+                        <span class="font-label-md text-label-md text-on-surface">James Wilson</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!-- Pagination -->
+        <div class="flex justify-center items-center gap-sm mt-xl">
+            <button
+                class="w-10 h-10 rounded border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors disabled:opacity-50"
+                disabled="">
+                <span class="material-symbols-outlined text-[20px]">chevron_left</span>
+            </button>
+            <button
+                class="w-10 h-10 rounded bg-primary text-on-primary font-label-md font-bold flex items-center justify-center">1</button>
+            <button
+                class="w-10 h-10 rounded border border-outline-variant flex items-center justify-center text-on-surface-variant font-label-md hover:bg-surface-container hover:text-primary transition-colors">2</button>
+            <button
+                class="w-10 h-10 rounded border border-outline-variant flex items-center justify-center text-on-surface-variant font-label-md hover:bg-surface-container hover:text-primary transition-colors">3</button>
+            <span class="text-outline mx-xs">...</span>
+            <button
+                class="w-10 h-10 rounded border border-outline-variant flex items-center justify-center text-on-surface-variant font-label-md hover:bg-surface-container hover:text-primary transition-colors">12</button>
+            <button
+                class="w-10 h-10 rounded border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors">
+                <span class="material-symbols-outlined text-[20px]">chevron_right</span>
+            </button>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-surface-container-low dark:bg-surface-container-highest border-t border-surface-variant dark:border-outline-variant transition-all duration-200">
+        <div
+            class="grid grid-cols-1 md:grid-cols-4 gap-md w-full px-margin-mobile md:px-margin-desktop py-lg max-w-7xl mx-auto">
+            <div>
+                <a class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface mb-md block"
+                    href="index.html">Apex Suite Cloud</a>
+                <p class="font-label-sm text-label-sm text-on-surface-variant mb-md max-w-xs">The intelligent foundation
+                    for modern enterprise operations. Scalable, secure, and predictive.</p>
+                <div
+                    class="inline-flex items-center gap-xs bg-ice-blue border border-surface-variant rounded-full px-sm py-xs">
+                    <div class="w-2 h-2 rounded-full bg-primary-container"></div>
+                    <span class="font-label-sm text-on-surface">System Status: Operational</span>
+                </div>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Product</span>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Intelligent ERP</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Smart Billing</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Predictive CRM</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="pricing.html">Pricing</a>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Company</span>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">About Us</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Careers</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="blog.html">Blog</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="contact-us.html">Contact</a>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Legal</span>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Privacy Policy</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Terms of Service</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Security</a>
+            </div>
+        </div>
+        <div
+            class="border-t border-surface-variant w-full px-margin-mobile md:px-margin-desktop py-md max-w-7xl mx-auto flex justify-between items-center">
+            <span class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Apex Suite Cloud. All rights
+                reserved.</span>
+            <div class="flex gap-sm">
+                <!-- Social Placeholders -->
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span
+                        class="material-symbols-outlined text-[20px]">language</span></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

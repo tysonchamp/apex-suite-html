@@ -1,307 +1,413 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Apex Suite Cloud - Pricing</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="js/tailwind-config.js"></script>
+<html class="light" lang="en">
 
-<link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Apex Suite Cloud - Pricing</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="js/tailwind-config.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="antialiased min-h-screen flex flex-col font-body-md text-body-md">
-<!-- TopNavBar Component -->
-<nav class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/20 dark:border-white/10 shadow-sm transition-all duration-300">
-<div class="flex justify-between items-center h-16 px-margin-desktop max-w-[1440px] mx-auto">
-<div class="flex items-center gap-md">
-<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity" href="index.html">
+    <!-- TopNavBar Component -->
+    <nav
+        class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/20 dark:border-white/10 shadow-sm transition-all duration-300">
+        <div class="flex justify-between items-center h-16 px-margin-desktop max-w-[1440px] mx-auto">
+            <div class="flex items-center gap-md">
+                <a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity"
+                    href="index.html">
                     Apex Suite Cloud
                 </a>
-</div>
-<div class="hidden md:flex items-center gap-gutter font-label-md text-label-md">
-<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="#">
+            </div>
+            <div class="hidden md:flex items-center gap-gutter font-label-md text-label-md">
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform"
+                    href="#">
                     Solutions
                 </a>
-<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="#">
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform"
+                    href="#">
                     Platform
                 </a>
-<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="blog.html">
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform"
+                    href="blog.html">
                     Resources
                 </a>
-<a class="text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 pt-2 rounded-t-md active:scale-95 transition-transform" href="pricing.html">
+                <a class="text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 pt-2 rounded-t-md active:scale-95 transition-transform"
+                    href="pricing.html">
                     Pricing
                 </a>
-</div>
-<div class="flex items-center gap-sm">
-<button class="hidden md:inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 border border-outline-variant text-primary hover:bg-[#E6F0FF] rounded-lg transition-colors bg-transparent active:scale-95 transition-transform">
+            </div>
+            <div class="flex items-center gap-sm">
+                <button
+                    class="hidden md:inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 border border-outline-variant text-primary hover:bg-[#E6F0FF] rounded-lg transition-colors bg-transparent active:scale-95 transition-transform">
                     Log In
                 </button>
-<button onclick="window.location.href='contact-us.html'" class="inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 bg-[#0052cc] text-white hover:bg-primary rounded-lg shadow-sm transition-colors active:scale-95 transition-transform">
+                <button onclick="window.location.href='contact-us.html'"
+                    class="inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 bg-[#0052cc] text-white hover:bg-primary rounded-lg shadow-sm transition-colors active:scale-95 transition-transform">
                     Book a Demo
                 </button>
-<button class="md:hidden p-2 text-on-surface-variant">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
-</div>
-</div>
-</nav>
-<!-- Main Canvas -->
-<main class="flex-grow pt-[104px] pb-xl px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto w-full">
-<!-- Header Section -->
-<header class="text-center mb-lg md:mb-xl max-w-3xl mx-auto">
-<h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface mb-md">
-                Transparent Pricing for <br/> <span class="ai-gradient-text">Organized Intelligence</span>
-</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">
-                Choose the perfect plan to scale your operations. No hidden fees, just clear, high-performance capabilities tailored for enterprise clarity.
+                <button class="md:hidden p-2 text-on-surface-variant">
+                    <span class="material-symbols-outlined" data-icon="menu">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Canvas -->
+    <main class="flex-grow pt-[104px] pb-xl px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto w-full">
+        <!-- Header Section -->
+        <header class="text-center mb-lg md:mb-xl max-w-3xl mx-auto">
+            <h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface mb-md">
+                Transparent Pricing for <br /> <span class="ai-gradient-text">Organized Intelligence</span>
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">
+                Choose the perfect plan to scale your operations. No hidden fees, just clear, high-performance
+                capabilities tailored for enterprise clarity.
             </p>
-<!-- Billing Toggle -->
-<div class="flex items-center justify-center gap-sm bg-surface-container-low rounded-full p-1 w-max mx-auto border border-surface-variant shadow-[inset_0_2px_4px_rgba(0,0,0,0.02)]">
-<button class="font-label-md text-label-md px-6 py-2 rounded-full transition-all duration-300 text-on-surface-variant hover:text-primary" id="toggle-monthly">
+            <!-- Billing Toggle -->
+            <div
+                class="flex items-center justify-center gap-sm bg-surface-container-low rounded-full p-1 w-max mx-auto border border-surface-variant shadow-[inset_0_2px_4px_rgba(0,0,0,0.02)]">
+                <button
+                    class="font-label-md text-label-md px-6 py-2 rounded-full transition-all duration-300 text-on-surface-variant hover:text-primary"
+                    id="toggle-monthly">
                     Monthly
                 </button>
-<button class="font-label-md text-label-md px-6 py-2 rounded-full bg-white text-primary shadow-sm border border-outline-variant transition-all duration-300" id="toggle-annual">
-                    Annually <span class="text-[10px] bg-[#E6F0FF] text-primary px-2 py-0.5 rounded-full ml-2">Save 20%</span>
-</button>
-</div>
-</header>
-<!-- Pricing Table / Cards -->
-<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-xl relative z-10">
-<!-- Tier 1: Starter -->
-<div class="glass-panel bg-white rounded-xl p-md flex flex-col h-full hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow duration-300">
-<div class="mb-md border-b border-[#E6F0FF] pb-md">
-<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Starter</h3>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm h-12">Essential tools for small teams getting started.</p>
-<div class="mt-md flex items-baseline gap-1">
-<span class="font-headline-lg text-headline-lg text-on-surface" data-annual="$24" data-monthly="$29">$24</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">/user/mo</span>
-</div>
-</div>
-<ul class="flex-grow space-y-sm mb-lg">
-<li class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm">Up to 5 Users</span>
-</li>
-<li class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm">Basic Analytics</span>
-</li>
-<li class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm">Standard Support</span>
-</li>
-<li class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm">5GB Storage</span>
-</li>
-</ul>
-<button class="w-full mt-auto font-label-md text-label-md py-3 px-4 border border-[#E6F0FF] text-primary bg-transparent hover:bg-[#E6F0FF] rounded-lg transition-colors">
+                <button
+                    class="font-label-md text-label-md px-6 py-2 rounded-full bg-white text-primary shadow-sm border border-outline-variant transition-all duration-300"
+                    id="toggle-annual">
+                    Annually <span class="text-[10px] bg-[#E6F0FF] text-primary px-2 py-0.5 rounded-full ml-2">Save
+                        20%</span>
+                </button>
+            </div>
+        </header>
+        <!-- Pricing Table / Cards -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-xl relative z-10">
+            <!-- Tier 1: Starter -->
+            <div
+                class="glass-panel bg-white rounded-xl p-md flex flex-col h-full hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow duration-300">
+                <div class="mb-md border-b border-[#E6F0FF] pb-md">
+                    <h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Starter</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant text-sm h-12">Essential tools for small
+                        teams getting started.</p>
+                    <div class="mt-md flex items-baseline gap-1">
+                        <span class="font-headline-lg text-headline-lg text-on-surface" data-annual="$24"
+                            data-monthly="$29">$24</span>
+                        <span class="font-label-sm text-label-sm text-on-surface-variant">/user/mo</span>
+                    </div>
+                </div>
+                <ul class="flex-grow space-y-sm mb-lg">
+                    <li class="flex items-start gap-sm">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm">Up to 5 Users</span>
+                    </li>
+                    <li class="flex items-start gap-sm">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm">Basic Analytics</span>
+                    </li>
+                    <li class="flex items-start gap-sm">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm">Standard Support</span>
+                    </li>
+                    <li class="flex items-start gap-sm">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm">5GB Storage</span>
+                    </li>
+                </ul>
+                <button
+                    class="w-full mt-auto font-label-md text-label-md py-3 px-4 border border-[#E6F0FF] text-primary bg-transparent hover:bg-[#E6F0FF] rounded-lg transition-colors">
                     Start Free Trial
                 </button>
-</div>
-<!-- Tier 2: Growth -->
-<div class="glass-panel bg-white rounded-xl p-md flex flex-col h-full hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow duration-300">
-<div class="mb-md border-b border-[#E6F0FF] pb-md">
-<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Growth</h3>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm h-12">Advanced features for scaling businesses.</p>
-<div class="mt-md flex items-baseline gap-1">
-<span class="font-headline-lg text-headline-lg text-on-surface" data-annual="$64" data-monthly="$79">$64</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">/user/mo</span>
-</div>
-</div>
-<ul class="flex-grow space-y-sm mb-lg">
-<li class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm">Up to 25 Users</span>
-</li>
-<li class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm">Advanced Analytics Dashboard</span>
-</li>
-<li class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm">Priority Email Support</span>
-</li>
-<li class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm">50GB Storage</span>
-</li>
-<li class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm">Custom Integrations</span>
-</li>
-</ul>
-<button class="w-full mt-auto font-label-md text-label-md py-3 px-4 border border-[#E6F0FF] text-primary bg-transparent hover:bg-[#E6F0FF] rounded-lg transition-colors">
+            </div>
+            <!-- Tier 2: Growth -->
+            <div
+                class="glass-panel bg-white rounded-xl p-md flex flex-col h-full hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow duration-300">
+                <div class="mb-md border-b border-[#E6F0FF] pb-md">
+                    <h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Growth</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant text-sm h-12">Advanced features for
+                        scaling businesses.</p>
+                    <div class="mt-md flex items-baseline gap-1">
+                        <span class="font-headline-lg text-headline-lg text-on-surface" data-annual="$64"
+                            data-monthly="$79">$64</span>
+                        <span class="font-label-sm text-label-sm text-on-surface-variant">/user/mo</span>
+                    </div>
+                </div>
+                <ul class="flex-grow space-y-sm mb-lg">
+                    <li class="flex items-start gap-sm">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm">Up to 25 Users</span>
+                    </li>
+                    <li class="flex items-start gap-sm">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm">Advanced Analytics
+                            Dashboard</span>
+                    </li>
+                    <li class="flex items-start gap-sm">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm">Priority Email
+                            Support</span>
+                    </li>
+                    <li class="flex items-start gap-sm">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm">50GB Storage</span>
+                    </li>
+                    <li class="flex items-start gap-sm">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm">Custom
+                            Integrations</span>
+                    </li>
+                </ul>
+                <button
+                    class="w-full mt-auto font-label-md text-label-md py-3 px-4 border border-[#E6F0FF] text-primary bg-transparent hover:bg-[#E6F0FF] rounded-lg transition-colors">
                     Start Free Trial
                 </button>
-</div>
-<!-- Tier 3: Pro (Highlighted) -->
-<div class="ai-gradient-border glass-panel bg-white rounded-xl p-md flex flex-col h-full shadow-[0_12px_40px_rgba(0,33,77,0.12)] relative transform md:-translate-y-2">
-<div class="absolute -top-3 right-4 bg-[#E6F0FF] text-primary font-label-sm text-label-sm px-3 py-1 rounded-full border border-primary-fixed">Most Popular</div>
-<div class="mb-md border-b border-[#E6F0FF] pb-md mt-2">
-<h3 class="font-headline-md text-headline-md text-primary mb-xs">Pro</h3>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm h-12">Full intelligence suite for professional teams.</p>
-<div class="mt-md flex items-baseline gap-1">
-<span class="font-headline-lg text-headline-lg text-on-surface" data-annual="$119" data-monthly="$149">$119</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">/user/mo</span>
-</div>
-</div>
-<ul class="flex-grow space-y-sm mb-lg">
-<li class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm">Unlimited Users</span>
-</li>
-<li class="flex items-start gap-sm p-2 bg-[#E6F0FF]/50 rounded-md border border-[#E6F0FF]">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="auto_awesome" data-weight="fill" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm font-medium">Apex Intelligence Insights</span>
-</li>
-<li class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm">24/7 Phone Support</span>
-</li>
-<li class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm">500GB Storage</span>
-</li>
-<li class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm">Advanced Security Controls</span>
-</li>
-</ul>
-<button class="w-full mt-auto font-label-md text-label-md py-3 px-4 bg-[#0052cc] text-white hover:bg-primary rounded-lg shadow-sm transition-colors">
+            </div>
+            <!-- Tier 3: Pro (Highlighted) -->
+            <div
+                class="ai-gradient-border glass-panel bg-white rounded-xl p-md flex flex-col h-full shadow-[0_12px_40px_rgba(0,33,77,0.12)] relative transform md:-translate-y-2">
+                <div
+                    class="absolute -top-3 right-4 bg-[#E6F0FF] text-primary font-label-sm text-label-sm px-3 py-1 rounded-full border border-primary-fixed">
+                    Most Popular</div>
+                <div class="mb-md border-b border-[#E6F0FF] pb-md mt-2">
+                    <h3 class="font-headline-md text-headline-md text-primary mb-xs">Pro</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant text-sm h-12">Full intelligence suite
+                        for professional teams.</p>
+                    <div class="mt-md flex items-baseline gap-1">
+                        <span class="font-headline-lg text-headline-lg text-on-surface" data-annual="$119"
+                            data-monthly="$149">$119</span>
+                        <span class="font-label-sm text-label-sm text-on-surface-variant">/user/mo</span>
+                    </div>
+                </div>
+                <ul class="flex-grow space-y-sm mb-lg">
+                    <li class="flex items-start gap-sm">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm">Unlimited Users</span>
+                    </li>
+                    <li class="flex items-start gap-sm p-2 bg-[#E6F0FF]/50 rounded-md border border-[#E6F0FF]">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="auto_awesome"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm font-medium">Apex
+                            Intelligence Insights</span>
+                    </li>
+                    <li class="flex items-start gap-sm">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm">24/7 Phone
+                            Support</span>
+                    </li>
+                    <li class="flex items-start gap-sm">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm">500GB Storage</span>
+                    </li>
+                    <li class="flex items-start gap-sm">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm">Advanced Security
+                            Controls</span>
+                    </li>
+                </ul>
+                <button
+                    class="w-full mt-auto font-label-md text-label-md py-3 px-4 bg-[#0052cc] text-white hover:bg-primary rounded-lg shadow-sm transition-colors">
                     Start Free Trial
                 </button>
-</div>
-<!-- Tier 4: Enterprise -->
-<div class="glass-panel bg-white rounded-xl p-md flex flex-col h-full hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow duration-300">
-<div class="mb-md border-b border-[#E6F0FF] pb-md">
-<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Enterprise</h3>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm h-12">Custom deployments for large organizations.</p>
-<div class="mt-md flex items-baseline gap-1">
-<span class="font-headline-md text-headline-md text-on-surface py-1">Custom</span>
-</div>
-</div>
-<ul class="flex-grow space-y-sm mb-lg">
-<li class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm">Dedicated Account Manager</span>
-</li>
-<li class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm">On-Premise Deployment Option</span>
-</li>
-<li class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm">SLA Guarantees</span>
-</li>
-<li class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm">Unlimited Storage</span>
-</li>
-<li class="flex items-start gap-sm">
-<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-sm">SSO &amp; Custom SAML</span>
-</li>
-</ul>
-<button class="w-full mt-auto font-label-md text-label-md py-3 px-4 border border-outline-variant text-on-surface bg-transparent hover:bg-surface-container-low rounded-lg transition-colors">
+            </div>
+            <!-- Tier 4: Enterprise -->
+            <div
+                class="glass-panel bg-white rounded-xl p-md flex flex-col h-full hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow duration-300">
+                <div class="mb-md border-b border-[#E6F0FF] pb-md">
+                    <h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Enterprise</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant text-sm h-12">Custom deployments for
+                        large organizations.</p>
+                    <div class="mt-md flex items-baseline gap-1">
+                        <span class="font-headline-md text-headline-md text-on-surface py-1">Custom</span>
+                    </div>
+                </div>
+                <ul class="flex-grow space-y-sm mb-lg">
+                    <li class="flex items-start gap-sm">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm">Dedicated Account
+                            Manager</span>
+                    </li>
+                    <li class="flex items-start gap-sm">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm">On-Premise Deployment
+                            Option</span>
+                    </li>
+                    <li class="flex items-start gap-sm">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm">SLA Guarantees</span>
+                    </li>
+                    <li class="flex items-start gap-sm">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm">Unlimited Storage</span>
+                    </li>
+                    <li class="flex items-start gap-sm">
+                        <span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle"
+                            data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant text-sm">SSO &amp; Custom
+                            SAML</span>
+                    </li>
+                </ul>
+                <button
+                    class="w-full mt-auto font-label-md text-label-md py-3 px-4 border border-outline-variant text-on-surface bg-transparent hover:bg-surface-container-low rounded-lg transition-colors">
                     Contact Sales
                 </button>
-</div>
-</section>
-<!-- Detailed Feature Comparison Placeholder -->
-<section class="mt-xl mb-xl">
-<div class="text-center mb-lg">
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Compare Features</h2>
-</div>
-<div class="glass-panel bg-white rounded-xl overflow-hidden border border-[#E6F0FF]">
-<div class="p-lg text-center text-on-surface-variant font-body-md">
-<!-- Simplified standard list to avoid typical layout as requested, keeping it clean -->
-<p>A comprehensive feature comparison table would render here, utilizing CSS Grid to ensure clean alignment of checkmarks and specific feature limits across all four tiers, adhering to the 1px #E6F0FF horizontal separators for data rows.</p>
-</div>
-</div>
-</section>
-<!-- FAQ Section -->
-<section class="mt-xl mb-xl max-w-4xl mx-auto">
-<div class="text-center mb-lg">
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Billing &amp; Support FAQ</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mt-sm">Common questions about managing your Apex Suite Cloud subscription.</p>
-</div>
-<div class="space-y-sm">
-<!-- FAQ Item 1 -->
-<div class="glass-panel bg-white rounded-lg border border-[#E6F0FF] hover:border-primary-fixed transition-colors">
-<button class="w-full flex justify-between items-center p-md text-left focus:outline-none">
-<span class="font-headline-md text-body-lg font-semibold text-on-surface">Can I switch plans later?</span>
-<span class="material-symbols-outlined text-on-surface-variant" data-icon="expand_more">expand_more</span>
-</button>
-<div class="px-md pb-md hidden text-on-surface-variant font-body-md">
-<p>Yes, you can upgrade or downgrade your plan at any time from your account settings. Prorated charges will be applied automatically.</p>
-</div>
-</div>
-<!-- FAQ Item 2 -->
-<div class="glass-panel bg-white rounded-lg border border-[#E6F0FF] hover:border-primary-fixed transition-colors">
-<button class="w-full flex justify-between items-center p-md text-left focus:outline-none">
-<span class="font-headline-md text-body-lg font-semibold text-on-surface">What payment methods do you accept?</span>
-<span class="material-symbols-outlined text-on-surface-variant" data-icon="expand_more">expand_more</span>
-</button>
-<div class="px-md pb-md hidden text-on-surface-variant font-body-md">
-<p>We accept all major credit cards (Visa, MasterCard, American Express) and PayPal for standard plans. Enterprise customers can request invoicing.</p>
-</div>
-</div>
-<!-- FAQ Item 3 -->
-<div class="glass-panel bg-white rounded-lg border border-[#E6F0FF] hover:border-primary-fixed transition-colors">
-<button class="w-full flex justify-between items-center p-md text-left focus:outline-none">
-<span class="font-headline-md text-body-lg font-semibold text-on-surface">How does the 14-day free trial work?</span>
-<span class="material-symbols-outlined text-on-surface-variant" data-icon="expand_more">expand_more</span>
-</button>
-<div class="px-md pb-md hidden text-on-surface-variant font-body-md">
-<p>You get full access to the Pro plan features for 14 days. No credit card is required to start. After 14 days, you can choose a plan to continue using Apex Suite Cloud.</p>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container-low dark:bg-surface-container-highest border-t border-surface-variant dark:border-outline-variant transition-all duration-200">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-md w-full px-margin-mobile md:px-margin-desktop py-lg max-w-7xl mx-auto">
-<div>
-<a class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface mb-md block" href="index.html">Apex Suite Cloud</a>
-<p class="font-label-sm text-label-sm text-on-surface-variant mb-md max-w-xs">The intelligent foundation for modern enterprise operations. Scalable, secure, and predictive.</p>
-<div class="inline-flex items-center gap-xs bg-ice-blue border border-surface-variant rounded-full px-sm py-xs">
-<div class="w-2 h-2 rounded-full bg-primary-container"></div>
-<span class="font-label-sm text-on-surface">System Status: Operational</span>
-</div>
-</div>
-<div class="flex flex-col gap-sm">
-<span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Product</span>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Intelligent ERP</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Smart Billing</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Predictive CRM</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="pricing.html">Pricing</a>
-</div>
-<div class="flex flex-col gap-sm">
-<span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Company</span>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">About Us</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Careers</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="blog.html">Blog</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="contact-us.html">Contact</a>
-</div>
-<div class="flex flex-col gap-sm">
-<span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Legal</span>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Privacy Policy</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Terms of Service</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Security</a>
-</div>
-</div>
-<div class="border-t border-surface-variant w-full px-margin-mobile md:px-margin-desktop py-md max-w-7xl mx-auto flex justify-between items-center">
-<span class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Apex Suite Cloud. All rights reserved.</span>
-<div class="flex gap-sm">
-<!-- Social Placeholders -->
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">language</span></a>
-</div>
-</div>
-</footer>
-<script src="js/main.js"></script>
-</body></html>
+            </div>
+        </section>
+        <!-- Detailed Feature Comparison Placeholder -->
+        <section class="mt-xl mb-xl">
+            <div class="text-center mb-lg">
+                <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Compare
+                    Features</h2>
+            </div>
+            <div class="glass-panel bg-white rounded-xl overflow-hidden border border-[#E6F0FF]">
+                <div class="p-lg text-center text-on-surface-variant font-body-md">
+                    <!-- Simplified standard list to avoid typical layout as requested, keeping it clean -->
+                    <p>A comprehensive feature comparison table would render here, utilizing CSS Grid to ensure clean
+                        alignment of checkmarks and specific feature limits across all four tiers, adhering to the 1px
+                        #E6F0FF horizontal separators for data rows.</p>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Section -->
+        <section class="mt-xl mb-xl max-w-4xl mx-auto">
+            <div class="text-center mb-lg">
+                <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Billing &amp;
+                    Support FAQ</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-sm">Common questions about managing your
+                    Apex Suite Cloud subscription.</p>
+            </div>
+            <div class="space-y-sm">
+                <!-- FAQ Item 1 -->
+                <div
+                    class="glass-panel bg-white rounded-lg border border-[#E6F0FF] hover:border-primary-fixed transition-colors">
+                    <button class="w-full flex justify-between items-center p-md text-left focus:outline-none">
+                        <span class="font-headline-md text-body-lg font-semibold text-on-surface">Can I switch plans
+                            later?</span>
+                        <span class="material-symbols-outlined text-on-surface-variant"
+                            data-icon="expand_more">expand_more</span>
+                    </button>
+                    <div class="px-md pb-md hidden text-on-surface-variant font-body-md">
+                        <p>Yes, you can upgrade or downgrade your plan at any time from your account settings. Prorated
+                            charges will be applied automatically.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div
+                    class="glass-panel bg-white rounded-lg border border-[#E6F0FF] hover:border-primary-fixed transition-colors">
+                    <button class="w-full flex justify-between items-center p-md text-left focus:outline-none">
+                        <span class="font-headline-md text-body-lg font-semibold text-on-surface">What payment methods
+                            do you accept?</span>
+                        <span class="material-symbols-outlined text-on-surface-variant"
+                            data-icon="expand_more">expand_more</span>
+                    </button>
+                    <div class="px-md pb-md hidden text-on-surface-variant font-body-md">
+                        <p>We accept all major credit cards (Visa, MasterCard, American Express) and PayPal for standard
+                            plans. Enterprise customers can request invoicing.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div
+                    class="glass-panel bg-white rounded-lg border border-[#E6F0FF] hover:border-primary-fixed transition-colors">
+                    <button class="w-full flex justify-between items-center p-md text-left focus:outline-none">
+                        <span class="font-headline-md text-body-lg font-semibold text-on-surface">How does the 14-day
+                            free trial work?</span>
+                        <span class="material-symbols-outlined text-on-surface-variant"
+                            data-icon="expand_more">expand_more</span>
+                    </button>
+                    <div class="px-md pb-md hidden text-on-surface-variant font-body-md">
+                        <p>You get full access to the Pro plan features for 14 days. No credit card is required to
+                            start. After 14 days, you can choose a plan to continue using Apex Suite Cloud.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-surface-container-low dark:bg-surface-container-highest border-t border-surface-variant dark:border-outline-variant transition-all duration-200">
+        <div
+            class="grid grid-cols-1 md:grid-cols-4 gap-md w-full px-margin-mobile md:px-margin-desktop py-lg max-w-7xl mx-auto">
+            <div>
+                <a class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface mb-md block"
+                    href="index.html">Apex Suite Cloud</a>
+                <p class="font-label-sm text-label-sm text-on-surface-variant mb-md max-w-xs">The intelligent foundation
+                    for modern enterprise operations. Scalable, secure, and predictive.</p>
+                <div
+                    class="inline-flex items-center gap-xs bg-ice-blue border border-surface-variant rounded-full px-sm py-xs">
+                    <div class="w-2 h-2 rounded-full bg-primary-container"></div>
+                    <span class="font-label-sm text-on-surface">System Status: Operational</span>
+                </div>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Product</span>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Intelligent ERP</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Smart Billing</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Predictive CRM</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="pricing.html">Pricing</a>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Company</span>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">About Us</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Careers</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="blog.html">Blog</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="contact-us.html">Contact</a>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Legal</span>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Privacy Policy</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Terms of Service</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Security</a>
+            </div>
+        </div>
+        <div
+            class="border-t border-surface-variant w-full px-margin-mobile md:px-margin-desktop py-md max-w-7xl mx-auto flex justify-between items-center">
+            <span class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Apex Suite Cloud. All rights
+                reserved.</span>
+            <div class="flex gap-sm">
+                <!-- Social Placeholders -->
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span
+                        class="material-symbols-outlined text-[20px]">language</span></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

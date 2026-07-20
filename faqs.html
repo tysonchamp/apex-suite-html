@@ -1,214 +1,286 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Apex Suite Cloud - FAQ</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="js/tailwind-config.js"></script>
+<html class="light" lang="en">
 
-<link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Apex Suite Cloud - FAQ</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="js/tailwind-config.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col antialiased">
-<!-- TopNavBar Component -->
-<nav class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/20 dark:border-white/10 shadow-sm transition-all duration-300">
-<div class="flex justify-between items-center h-16 px-margin-desktop max-w-[1440px] mx-auto">
-<div class="flex items-center gap-md">
-<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity" href="index.html">
+    <!-- TopNavBar Component -->
+    <nav
+        class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/20 dark:border-white/10 shadow-sm transition-all duration-300">
+        <div class="flex justify-between items-center h-16 px-margin-desktop max-w-[1440px] mx-auto">
+            <div class="flex items-center gap-md">
+                <a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity"
+                    href="index.html">
                     Apex Suite Cloud
                 </a>
-</div>
-<div class="hidden md:flex items-center gap-gutter font-label-md text-label-md">
-<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="#">
+            </div>
+            <div class="hidden md:flex items-center gap-gutter font-label-md text-label-md">
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform"
+                    href="#">
                     Solutions
                 </a>
-<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="#">
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform"
+                    href="#">
                     Platform
                 </a>
-<a class="text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 pt-2 rounded-t-md active:scale-95 transition-transform" href="blog.html">
+                <a class="text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 pt-2 rounded-t-md active:scale-95 transition-transform"
+                    href="blog.html">
                     Resources
                 </a>
-<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="pricing.html">
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform"
+                    href="pricing.html">
                     Pricing
                 </a>
-</div>
-<div class="flex items-center gap-sm">
-<button class="hidden md:inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 border border-outline-variant text-primary hover:bg-[#E6F0FF] rounded-lg transition-colors bg-transparent active:scale-95 transition-transform">
+            </div>
+            <div class="flex items-center gap-sm">
+                <button
+                    class="hidden md:inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 border border-outline-variant text-primary hover:bg-[#E6F0FF] rounded-lg transition-colors bg-transparent active:scale-95 transition-transform">
                     Log In
                 </button>
-<button onclick="window.location.href='contact-us.html'" class="inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 bg-[#0052cc] text-white hover:bg-primary rounded-lg shadow-sm transition-colors active:scale-95 transition-transform">
+                <button onclick="window.location.href='contact-us.html'"
+                    class="inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 bg-[#0052cc] text-white hover:bg-primary rounded-lg shadow-sm transition-colors active:scale-95 transition-transform">
                     Book a Demo
                 </button>
-<button class="md:hidden p-2 text-on-surface-variant">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
-</div>
-</div>
-</nav>
-<!-- Main Content -->
-<main class="flex-grow pt-24 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1024px] mx-auto w-full">
-<!-- Hero & Search -->
-<div class="text-center mb-lg pt-lg">
-<h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface mb-sm">How can we help?</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-2xl mx-auto">Search our knowledge base or browse categories below to find answers to common questions about Apex Suite Cloud.</p>
-<div class="relative max-w-xl mx-auto">
-<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
-<input class="w-full h-14 pl-12 pr-4 rounded-full border border-outline-variant bg-surface-container-lowest text-on-surface focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/20 transition-all shadow-[0_4px_20px_rgba(0,33,77,0.06)] font-body-md text-body-md placeholder-outline" placeholder="Search for answers..." type="text"/>
-</div>
-</div>
-<!-- FAQ Categories Bento -->
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-xl">
-<!-- Security & Compliance -->
-<div class="md:col-span-2 bg-surface-container-lowest rounded-xl p-md border border-surface-container-high shadow-[0_4px_20px_rgba(0,33,77,0.06)] hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow">
-<div class="flex items-center gap-sm mb-md">
-<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
-<span class="material-symbols-outlined">shield_lock</span>
-</div>
-<h2 class="font-headline-md text-headline-md text-on-surface">Security &amp; Compliance</h2>
-</div>
-<div class="space-y-sm">
-<div class="accordion-item border-b border-surface-container-high pb-sm">
-<button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                <button class="md:hidden p-2 text-on-surface-variant">
+                    <span class="material-symbols-outlined" data-icon="menu">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="flex-grow pt-24 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1024px] mx-auto w-full">
+        <!-- Hero & Search -->
+        <div class="text-center mb-lg pt-lg">
+            <h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface mb-sm">How can we
+                help?</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-2xl mx-auto">Search our knowledge
+                base or browse categories below to find answers to common questions about Apex Suite Cloud.</p>
+            <div class="relative max-w-xl mx-auto">
+                <span
+                    class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+                <input
+                    class="w-full h-14 pl-12 pr-4 rounded-full border border-outline-variant bg-surface-container-lowest text-on-surface focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/20 transition-all shadow-[0_4px_20px_rgba(0,33,77,0.06)] font-body-md text-body-md placeholder-outline"
+                    placeholder="Search for answers..." type="text" />
+            </div>
+        </div>
+        <!-- FAQ Categories Bento -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-xl">
+            <!-- Security & Compliance -->
+            <div
+                class="md:col-span-2 bg-surface-container-lowest rounded-xl p-md border border-surface-container-high shadow-[0_4px_20px_rgba(0,33,77,0.06)] hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow">
+                <div class="flex items-center gap-sm mb-md">
+                    <div
+                        class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+                        <span class="material-symbols-outlined">shield_lock</span>
+                    </div>
+                    <h2 class="font-headline-md text-headline-md text-on-surface">Security &amp; Compliance</h2>
+                </div>
+                <div class="space-y-sm">
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button
+                            class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm"
+                            onclick="toggleAccordion(this)">
                             Is my data encrypted at rest and in transit?
                             <span class="material-symbols-outlined accordion-icon text-outline">expand_more</span>
-</button>
-<div class="accordion-content font-body-md text-body-md text-on-surface-variant">
-                            Yes, all customer data is encrypted at rest using AES-256 encryption. Data in transit is protected using TLS 1.2 or higher, ensuring secure communication between your infrastructure and Apex Cloud.
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            Yes, all customer data is encrypted at rest using AES-256 encryption. Data in transit is
+                            protected using TLS 1.2 or higher, ensuring secure communication between your infrastructure
+                            and Apex Cloud.
                         </div>
-</div>
-<div class="accordion-item border-b border-surface-container-high pb-sm">
-<button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                    </div>
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button
+                            class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm"
+                            onclick="toggleAccordion(this)">
                             What compliance certifications do you hold?
                             <span class="material-symbols-outlined accordion-icon text-outline">expand_more</span>
-</button>
-<div class="accordion-content font-body-md text-body-md text-on-surface-variant">
-                            Apex Suite Cloud maintains rigorous compliance standards, including SOC 2 Type II, ISO 27001, HIPAA, and GDPR readiness. Detailed compliance reports are available upon request for Enterprise customers.
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            Apex Suite Cloud maintains rigorous compliance standards, including SOC 2 Type II, ISO
+                            27001, HIPAA, and GDPR readiness. Detailed compliance reports are available upon request for
+                            Enterprise customers.
                         </div>
-</div>
-</div>
-</div>
-<!-- Integration -->
-<div class="md:col-span-2 bg-surface-container-lowest rounded-xl p-md border border-surface-container-high shadow-[0_4px_20px_rgba(0,33,77,0.06)] hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow">
-<div class="flex items-center gap-sm mb-md">
-<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
-<span class="material-symbols-outlined">integration_instructions</span>
-</div>
-<h2 class="font-headline-md text-headline-md text-on-surface">Integration</h2>
-</div>
-<div class="space-y-sm">
-<div class="accordion-item border-b border-surface-container-high pb-sm">
-<button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                    </div>
+                </div>
+            </div>
+            <!-- Integration -->
+            <div
+                class="md:col-span-2 bg-surface-container-lowest rounded-xl p-md border border-surface-container-high shadow-[0_4px_20px_rgba(0,33,77,0.06)] hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow">
+                <div class="flex items-center gap-sm mb-md">
+                    <div
+                        class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+                        <span class="material-symbols-outlined">integration_instructions</span>
+                    </div>
+                    <h2 class="font-headline-md text-headline-md text-on-surface">Integration</h2>
+                </div>
+                <div class="space-y-sm">
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button
+                            class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm"
+                            onclick="toggleAccordion(this)">
                             Do you offer RESTful APIs?
                             <span class="material-symbols-outlined accordion-icon text-outline">expand_more</span>
-</button>
-<div class="accordion-content font-body-md text-body-md text-on-surface-variant">
-                            Yes, our comprehensive REST API allows full programmatic access to Apex Suite features. We provide extensive documentation, SDKs in major languages, and dedicated developer support.
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            Yes, our comprehensive REST API allows full programmatic access to Apex Suite features. We
+                            provide extensive documentation, SDKs in major languages, and dedicated developer support.
                         </div>
-</div>
-<div class="accordion-item border-b border-surface-container-high pb-sm">
-<button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                    </div>
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button
+                            class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm"
+                            onclick="toggleAccordion(this)">
                             Can I connect with third-party SSO providers?
                             <span class="material-symbols-outlined accordion-icon text-outline">expand_more</span>
-</button>
-<div class="accordion-content font-body-md text-body-md text-on-surface-variant">
-                            Absolutely. We support SAML 2.0 and OIDC integrations with major identity providers including Okta, Azure AD, and Google Workspace on Pro and Enterprise tiers.
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            Absolutely. We support SAML 2.0 and OIDC integrations with major identity providers
+                            including Okta, Azure AD, and Google Workspace on Pro and Enterprise tiers.
                         </div>
-</div>
-</div>
-</div>
-<!-- Billing -->
-<div class="md:col-span-2 bg-surface-container-lowest rounded-xl p-md border border-surface-container-high shadow-[0_4px_20px_rgba(0,33,77,0.06)] hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow">
-<div class="flex items-center gap-sm mb-md">
-<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
-<span class="material-symbols-outlined">payments</span>
-</div>
-<h2 class="font-headline-md text-headline-md text-on-surface">Billing</h2>
-</div>
-<div class="space-y-sm">
-<div class="accordion-item border-b border-surface-container-high pb-sm">
-<button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                    </div>
+                </div>
+            </div>
+            <!-- Billing -->
+            <div
+                class="md:col-span-2 bg-surface-container-lowest rounded-xl p-md border border-surface-container-high shadow-[0_4px_20px_rgba(0,33,77,0.06)] hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow">
+                <div class="flex items-center gap-sm mb-md">
+                    <div
+                        class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+                        <span class="material-symbols-outlined">payments</span>
+                    </div>
+                    <h2 class="font-headline-md text-headline-md text-on-surface">Billing</h2>
+                </div>
+                <div class="space-y-sm">
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button
+                            class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm"
+                            onclick="toggleAccordion(this)">
                             How is usage calculated?
                             <span class="material-symbols-outlined accordion-icon text-outline">expand_more</span>
-</button>
-<div class="accordion-content font-body-md text-body-md text-on-surface-variant">
-                            Usage is calculated dynamically based on active API requests and stored gigabytes per billing cycle. You can view real-time usage metrics in the Billing Dashboard.
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            Usage is calculated dynamically based on active API requests and stored gigabytes per
+                            billing cycle. You can view real-time usage metrics in the Billing Dashboard.
                         </div>
-</div>
-</div>
-</div>
-<!-- Account Management -->
-<div class="md:col-span-2 bg-surface-container-lowest rounded-xl p-md border border-surface-container-high shadow-[0_4px_20px_rgba(0,33,77,0.06)] hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow">
-<div class="flex items-center gap-sm mb-md">
-<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
-<span class="material-symbols-outlined">manage_accounts</span>
-</div>
-<h2 class="font-headline-md text-headline-md text-on-surface">Account Management</h2>
-</div>
-<div class="space-y-sm">
-<div class="accordion-item border-b border-surface-container-high pb-sm">
-<button class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm" onclick="toggleAccordion(this)">
+                    </div>
+                </div>
+            </div>
+            <!-- Account Management -->
+            <div
+                class="md:col-span-2 bg-surface-container-lowest rounded-xl p-md border border-surface-container-high shadow-[0_4px_20px_rgba(0,33,77,0.06)] hover:shadow-[0_12px_40px_rgba(0,33,77,0.12)] transition-shadow">
+                <div class="flex items-center gap-sm mb-md">
+                    <div
+                        class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+                        <span class="material-symbols-outlined">manage_accounts</span>
+                    </div>
+                    <h2 class="font-headline-md text-headline-md text-on-surface">Account Management</h2>
+                </div>
+                <div class="space-y-sm">
+                    <div class="accordion-item border-b border-surface-container-high pb-sm">
+                        <button
+                            class="flex justify-between items-center w-full text-left font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-sm"
+                            onclick="toggleAccordion(this)">
                             How do I add team members?
                             <span class="material-symbols-outlined accordion-icon text-outline">expand_more</span>
-</button>
-<div class="accordion-content font-body-md text-body-md text-on-surface-variant">
-                            Administrators can invite new users via the 'Team Management' section in settings. You can assign specific roles (Admin, Editor, Viewer) to control access levels.
+                        </button>
+                        <div class="accordion-content font-body-md text-body-md text-on-surface-variant">
+                            Administrators can invite new users via the 'Team Management' section in settings. You can
+                            assign specific roles (Admin, Editor, Viewer) to control access levels.
                         </div>
-</div>
-</div>
-</div>
-</div>
-<!-- Still Need Help Section -->
-<div class="bg-surface-container-low rounded-xl p-lg text-center border border-surface-container-high">
-<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Still need help?</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-md">Our enterprise support team is available 24/7 to assist you with any technical or account-related inquiries.</p>
-<button class="inline-flex items-center justify-center h-12 px-6 font-label-md text-label-md text-on-primary bg-primary rounded-lg hover:bg-primary-container transition-colors duration-200 shadow-sm gap-2">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">headset_mic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Still Need Help Section -->
+        <div class="bg-surface-container-low rounded-xl p-lg text-center border border-surface-container-high">
+            <h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Still need help?</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-md">Our enterprise support team is available
+                24/7 to assist you with any technical or account-related inquiries.</p>
+            <button
+                class="inline-flex items-center justify-center h-12 px-6 font-label-md text-label-md text-on-primary bg-primary rounded-lg hover:bg-primary-container transition-colors duration-200 shadow-sm gap-2">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">headset_mic</span>
                 Contact Support
             </button>
-</div>
-</main>
-<!-- Footer Component -->
-<footer class="bg-surface-container-low dark:bg-surface-container-highest border-t border-surface-variant dark:border-outline-variant transition-all duration-200">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-md w-full px-margin-mobile md:px-margin-desktop py-lg max-w-7xl mx-auto">
-<div>
-<a class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface mb-md block" href="index.html">Apex Suite Cloud</a>
-<p class="font-label-sm text-label-sm text-on-surface-variant mb-md max-w-xs">The intelligent foundation for modern enterprise operations. Scalable, secure, and predictive.</p>
-<div class="inline-flex items-center gap-xs bg-ice-blue border border-surface-variant rounded-full px-sm py-xs">
-<div class="w-2 h-2 rounded-full bg-primary-container"></div>
-<span class="font-label-sm text-on-surface">System Status: Operational</span>
-</div>
-</div>
-<div class="flex flex-col gap-sm">
-<span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Product</span>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Intelligent ERP</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Smart Billing</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Predictive CRM</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="pricing.html">Pricing</a>
-</div>
-<div class="flex flex-col gap-sm">
-<span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Company</span>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">About Us</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Careers</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="blog.html">Blog</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="contact-us.html">Contact</a>
-</div>
-<div class="flex flex-col gap-sm">
-<span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Legal</span>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Privacy Policy</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Terms of Service</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="#">Security</a>
-</div>
-</div>
-<div class="border-t border-surface-variant w-full px-margin-mobile md:px-margin-desktop py-md max-w-7xl mx-auto flex justify-between items-center">
-<span class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Apex Suite Cloud. All rights reserved.</span>
-<div class="flex gap-sm">
-<!-- Social Placeholders -->
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">language</span></a>
-</div>
-</div>
-</footer>
-<script src="js/main.js"></script>
-</body></html>
+        </div>
+    </main>
+    <!-- Footer Component -->
+    <footer
+        class="bg-surface-container-low dark:bg-surface-container-highest border-t border-surface-variant dark:border-outline-variant transition-all duration-200">
+        <div
+            class="grid grid-cols-1 md:grid-cols-4 gap-md w-full px-margin-mobile md:px-margin-desktop py-lg max-w-7xl mx-auto">
+            <div>
+                <a class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface mb-md block"
+                    href="index.html">Apex Suite Cloud</a>
+                <p class="font-label-sm text-label-sm text-on-surface-variant mb-md max-w-xs">The intelligent foundation
+                    for modern enterprise operations. Scalable, secure, and predictive.</p>
+                <div
+                    class="inline-flex items-center gap-xs bg-ice-blue border border-surface-variant rounded-full px-sm py-xs">
+                    <div class="w-2 h-2 rounded-full bg-primary-container"></div>
+                    <span class="font-label-sm text-on-surface">System Status: Operational</span>
+                </div>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Product</span>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Intelligent ERP</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Smart Billing</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Predictive CRM</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="pricing.html">Pricing</a>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Company</span>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">About Us</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Careers</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="blog.html">Blog</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="contact-us.html">Contact</a>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Legal</span>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Privacy Policy</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Terms of Service</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Security</a>
+            </div>
+        </div>
+        <div
+            class="border-t border-surface-variant w-full px-margin-mobile md:px-margin-desktop py-md max-w-7xl mx-auto flex justify-between items-center">
+            <span class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Apex Suite Cloud. All rights
+                reserved.</span>
+            <div class="flex gap-sm">
+                <!-- Social Placeholders -->
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span
+                        class="material-symbols-outlined text-[20px]">language</span></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
