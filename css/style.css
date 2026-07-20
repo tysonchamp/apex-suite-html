@@ -1,23 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
-/* Styles from pricing.html */
-
+/* Global Styles */
 body {
-    background-color: #faf9ff;
+    background-color: transparent; /* Relying on HTML classes or ambient bg */
+    font-family: 'Plus Jakarta Sans', sans-serif;
     color: #051a3e;
 }
 
+/* Glassmorphism & Shadows */
 .glass-panel {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 4px 20px rgba(0, 33, 77, 0.06);
+    box-shadow: 0 8px 32px rgba(3, 84, 200, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.glass-panel:hover {
+    box-shadow: 0 16px 40px rgba(3, 84, 200, 0.15);
+    transform: translateY(-4px);
+    border-color: rgba(3, 84, 200, 0.2);
+}
+
+.ambient-shadow {
+    box-shadow: 0 4px 24px rgba(3, 84, 200, 0.06);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ambient-shadow:hover {
+    box-shadow: 0 16px 40px rgba(3, 84, 200, 0.12);
+    transform: translateY(-4px) scale(1.01);
+    border-color: rgba(3, 84, 200, 0.3);
+}
+
+/* Dynamic Gradients */
 .ai-gradient-text {
-    background: linear-gradient(135deg, #0354c8 0%, #3b5482 100%);
+    background: linear-gradient(135deg, #012254 0%, #0354c8 50%, #8a2be2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradientShift 6s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .ai-gradient-border {
@@ -31,29 +64,29 @@ body {
     position: absolute;
     inset: -2px;
     border-radius: 0.85rem;
-    background: linear-gradient(135deg, #0354c8, #d7e2ff);
+    background: linear-gradient(135deg, #0354c8, #8a2be2);
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
 }
 
-
-/* Styles from index.html */
-
-.glass-panel {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    box-shadow: 0 4px 20px rgba(0, 33, 77, 0.06);
-}
-
-.ambient-shadow {
-    box-shadow: 0 4px 20px rgba(0, 33, 77, 0.06);
+.ai-gradient-border:hover::before {
+    opacity: 1;
 }
 
 .gradient-stroke {
     border: 1px solid;
     border-image-source: linear-gradient(135deg, #0354c8, #a855f7);
     border-image-slice: 1;
+}
+
+/* Utilities */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-outlined.filled {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
 .testimonial-scroll::-webkit-scrollbar {
@@ -65,66 +98,6 @@ body {
     scrollbar-width: none;
 }
 
-
-/* Styles from blog-details.html */
-
-.material-symbols-outlined {
-    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-}
-
-.material-symbols-outlined.filled {
-    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-}
-
-.glass-panel {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-.ambient-shadow {
-    box-shadow: 0 4px 20px rgba(0, 33, 77, 0.06);
-}
-
-
-/* Styles from blog.html */
-
-body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: theme('colors.background');
-    color: theme('colors.on-background');
-}
-
-.glass-nav {
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.ambient-shadow {
-    box-shadow: 0 4px 20px rgba(0, 33, 77, 0.06);
-}
-
-.ambient-shadow-hover:hover {
-    box-shadow: 0 12px 40px rgba(0, 33, 77, 0.12);
-    transform: translateY(-2px);
-    transition: all 0.3s ease;
-}
-
-.ai-gradient-text {
-    background: linear-gradient(to right, #0354c8, #8a2be2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-/* Styles from contact-us.html */
-
-body {
-    background-color: #ffffff;
-    color: #051a3e;
-}
-
 textarea::-webkit-scrollbar {
     width: 8px;
 }
@@ -134,13 +107,11 @@ textarea::-webkit-scrollbar-track {
 }
 
 textarea::-webkit-scrollbar-thumb {
-    background-color: #c3c6d6;
+    background-color: rgba(3, 84, 200, 0.3);
     border-radius: 4px;
 }
 
-
-/* Styles from faqs.html */
-
+/* FAQ Accordion Animations */
 .accordion-content {
     transition: max-height 0.3s ease-out, padding 0.3s ease-out, opacity 0.3s ease-out;
     max-height: 0;
