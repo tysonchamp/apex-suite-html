@@ -22,74 +22,110 @@
     class="antialiased min-h-screen flex flex-col font-body-md text-body-md selection:bg-primary-container selection:text-on-primary-container">
     <!-- Global Ambient Background -->
     <div class="fixed inset-0 overflow-hidden pointer-events-none -z-50">
-        <div class="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-gradient-to-br from-[#0354c8]/10 to-purple-500/5 rounded-full blur-[100px] md:blur-[150px]"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-gradient-to-tl from-[#0354c8]/10 to-blue-300/10 rounded-full blur-[100px] md:blur-[150px]"></div>
+        <div
+            class="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-gradient-to-br from-[#0354c8]/10 to-purple-500/5 rounded-full blur-[100px] md:blur-[150px]">
+        </div>
+        <div
+            class="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-gradient-to-tl from-[#0354c8]/10 to-blue-300/10 rounded-full blur-[100px] md:blur-[150px]">
+        </div>
     </div>
 
     <!-- TopNavBar Component -->
-            <nav class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/20 dark:border-white/10 shadow-sm transition-all duration-300">
+    <nav
+        class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/20 dark:border-white/10 shadow-sm transition-all duration-300">
         <div class="flex justify-between items-center h-16 px-margin-desktop max-w-[1440px] mx-auto">
             <div class="flex items-center gap-md">
-                <a class="flex items-center gap-2 font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity" href="index.html">
+                <a class="flex items-center gap-2 font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity"
+                    href="index.html">
                     <img src="images/logo.webp" alt="Apex Suite Cloud Logo" class="h-8 w-auto">
                 </a>
             </div>
             <div class="hidden md:flex items-center gap-gutter font-label-md text-label-md">
-                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="index.html">Home</a>
-                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="#">About Us</a>
-                
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform"
+                    href="index.html">Home</a>
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform"
+                    href="#">About Us</a>
+
                 <div class="relative group">
-                    <button class="flex items-center gap-1 text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform">
+                    <button
+                        class="flex items-center gap-1 text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform">
                         Services
                         <span class="material-symbols-outlined text-[18px]">expand_more</span>
                     </button>
-                    <div class="absolute left-0 mt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-white dark:bg-inverse-surface border border-surface-variant rounded-md shadow-lg overflow-hidden z-50">
-                        <a href="#" class="block px-4 py-3 text-sm text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors">1. Service Sector ERP</a>
-                        <a href="#" class="block px-4 py-3 text-sm text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors">2. Inventory & Billing System</a>
-                        <a href="#" class="block px-4 py-3 text-sm text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors">3. CRM</a>
+                    <div
+                        class="absolute left-0 mt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-white dark:bg-inverse-surface border border-surface-variant rounded-md shadow-lg overflow-hidden z-50">
+                        <a href="#"
+                            class="block px-4 py-3 text-sm text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors">1.
+                            Service Sector ERP</a>
+                        <a href="#"
+                            class="block px-4 py-3 text-sm text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors">2.
+                            Inventory & Billing System</a>
+                        <a href="#"
+                            class="block px-4 py-3 text-sm text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors">3.
+                            CRM</a>
                     </div>
                 </div>
 
-                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="faqs.html">FAQ</a>
-                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="pricing.html">Pricing</a>
-                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="contact-us.html">Contact Us</a>
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform"
+                    href="faqs.html">FAQ</a>
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform"
+                    href="pricing.html">Pricing</a>
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform"
+                    href="contact-us.html">Contact Us</a>
             </div>
             <div class="flex items-center gap-sm">
-                <button class="hidden md:inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 border border-outline-variant text-primary hover:bg-[#E6F0FF] rounded-lg transition-colors bg-transparent active:scale-95 transition-transform">
+                <button
+                    class="hidden md:inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 border border-outline-variant text-primary hover:bg-[#E6F0FF] rounded-lg transition-colors bg-transparent active:scale-95 transition-transform">
                     Log In
                 </button>
-                <button onclick="window.location.href='contact-us.html'" class="inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 bg-[#0354c8] text-white hover:bg-[#023e98] rounded-lg shadow-sm transition-colors active:scale-95 transition-transform">
+                <button onclick="window.location.href='contact-us.html'"
+                    class="inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 bg-[#0354c8] text-white hover:bg-[#023e98] rounded-lg shadow-sm transition-colors active:scale-95 transition-transform">
                     Book a Demo
                 </button>
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface-variant hover:text-primary transition-colors">
+                <button id="mobile-menu-btn"
+                    class="md:hidden p-2 text-on-surface-variant hover:text-primary transition-colors">
                     <span class="material-symbols-outlined" data-icon="menu">menu</span>
                 </button>
             </div>
         </div>
-        
+
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-inverse-surface border-t border-surface-variant/50 px-margin-mobile py-4 flex-col gap-2 shadow-lg h-[calc(100vh-64px)] overflow-y-auto">
-            <a class="text-on-surface-variant font-label-md hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-3 rounded-md" href="index.html">Home</a>
-            <a class="text-on-surface-variant font-label-md hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-3 rounded-md" href="#">About Us</a>
-            
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white dark:bg-inverse-surface border-t border-surface-variant/50 px-margin-mobile py-4 flex-col gap-2 shadow-lg h-[calc(100vh-64px)] overflow-y-auto">
+            <a class="text-on-surface-variant font-label-md hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-3 rounded-md"
+                href="index.html">Home</a>
+            <a class="text-on-surface-variant font-label-md hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-3 rounded-md"
+                href="#">About Us</a>
+
             <div class="py-2 px-4">
                 <div class="text-on-surface-variant font-semibold mb-2 font-label-md">Services</div>
                 <div class="flex flex-col gap-1 pl-4 border-l-2 border-surface-variant/50">
-                    <a href="#" class="text-on-surface-variant text-sm hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-2 rounded-md">1. Service Sector ERP</a>
-                    <a href="#" class="text-on-surface-variant text-sm hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-2 rounded-md">2. Inventory & Billing System</a>
-                    <a href="#" class="text-on-surface-variant text-sm hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-2 rounded-md">3. CRM</a>
+                    <a href="#"
+                        class="text-on-surface-variant text-sm hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-2 rounded-md">1.
+                        Service Sector ERP</a>
+                    <a href="#"
+                        class="text-on-surface-variant text-sm hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-2 rounded-md">2.
+                        Inventory & Billing System</a>
+                    <a href="#"
+                        class="text-on-surface-variant text-sm hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-2 rounded-md">3.
+                        CRM</a>
                 </div>
             </div>
 
-            <a class="text-on-surface-variant font-label-md hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-3 rounded-md" href="faqs.html">FAQ</a>
-            <a class="text-on-surface-variant font-label-md hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-3 rounded-md" href="pricing.html">Pricing</a>
-            <a class="text-on-surface-variant font-label-md hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-3 rounded-md" href="contact-us.html">Contact Us</a>
-            
+            <a class="text-on-surface-variant font-label-md hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-3 rounded-md"
+                href="faqs.html">FAQ</a>
+            <a class="text-on-surface-variant font-label-md hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-3 rounded-md"
+                href="pricing.html">Pricing</a>
+            <a class="text-on-surface-variant font-label-md hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-3 rounded-md"
+                href="contact-us.html">Contact Us</a>
+
             <div class="mt-4 flex flex-col gap-3 border-t border-surface-variant/50 pt-6 px-4">
-                <button class="w-full font-label-md text-label-md px-4 py-3 border border-outline-variant text-primary hover:bg-ice-blue rounded-lg transition-colors bg-transparent">
+                <button
+                    class="w-full font-label-md text-label-md px-4 py-3 border border-outline-variant text-primary hover:bg-ice-blue rounded-lg transition-colors bg-transparent">
                     Log In
                 </button>
-                <button onclick="window.location.href='contact-us.html'" class="w-full font-label-md text-label-md px-4 py-3 bg-[#0354c8] text-white hover:bg-[#023e98] rounded-lg shadow-sm transition-colors">
+                <button onclick="window.location.href='contact-us.html'"
+                    class="w-full font-label-md text-label-md px-4 py-3 bg-[#0354c8] text-white hover:bg-[#023e98] rounded-lg shadow-sm transition-colors">
                     Book a Demo
                 </button>
             </div>
@@ -236,51 +272,72 @@
         </section>
     </div>
     <!-- Footer Component -->
-    <footer class="relative bg-gradient-to-br from-deep-navy via-[#023e98] to-deep-navy border-t border-white/10 shadow-[0_-15px_40px_rgba(3,84,200,0.15)] overflow-hidden transition-all duration-200">
-    <!-- Ambient Footer Glow -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1/2 bg-[#0354c8]/20 blur-[100px] pointer-events-none"></div>
-    
-    <div class="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-lg w-full px-margin-mobile md:px-margin-desktop py-xl max-w-7xl mx-auto text-white">
-      <div>
-        <a class="font-headline-md text-headline-md font-bold text-white mb-md block flex items-center gap-2 hover:opacity-90 transition-opacity" href="index.html">
-          <img src="images/logo.webp" alt="Apex Suite Cloud Logo" class="h-8 w-auto brightness-0 invert">
-          Apex Suite Cloud
-        </a>
-        <p class="font-label-sm text-label-sm text-white/70 mb-lg max-w-xs leading-relaxed">The intelligent foundation for modern enterprise operations. Scalable, secure, and predictive.</p>
-        <div class="inline-flex items-center gap-sm bg-white/5 border border-white/10 rounded-full px-4 py-2 backdrop-blur-md">
-          <div class="w-2 h-2 rounded-full bg-green-400 shadow-[0_0_10px_rgba(74,222,128,0.8)]"></div>
-          <span class="font-label-sm text-white/90">System Status: Operational</span>
+    <footer
+        class="relative bg-gradient-to-br from-deep-navy via-[#023e98] to-deep-navy border-t border-white/10 shadow-[0_-15px_40px_rgba(3,84,200,0.15)] overflow-hidden transition-all duration-200">
+        <!-- Ambient Footer Glow -->
+        <div
+            class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1/2 bg-[#0354c8]/20 blur-[100px] pointer-events-none">
         </div>
-      </div>
-      <div class="flex flex-col gap-sm">
-        <span class="font-label-md text-label-md text-white font-semibold mb-xs tracking-wide">Product</span>
-        <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all" href="#">Intelligent ERP</a>
-        <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all" href="#">Smart Billing</a>
-        <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all" href="#">Predictive CRM</a>
-        <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all" href="pricing.html">Pricing</a>
-      </div>
-      <div class="flex flex-col gap-sm">
-        <span class="font-label-md text-label-md text-white font-semibold mb-xs tracking-wide">Company</span>
-        <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all" href="#">About Us</a>
-        <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all" href="#">Careers</a>
-        <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all" href="blog.html">Blog</a>
-        <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all" href="contact-us.html">Contact</a>
-      </div>
-      <div class="flex flex-col gap-sm">
-        <span class="font-label-md text-label-md text-white font-semibold mb-xs tracking-wide">Legal</span>
-        <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all" href="#">Privacy Policy</a>
-        <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all" href="#">Terms of Service</a>
-        <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all" href="#">Security</a>
-      </div>
-    </div>
-    <div class="relative z-10 border-t border-white/10 w-full px-margin-mobile md:px-margin-desktop py-md max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-      <span class="font-label-sm text-label-sm text-white/60">© 2024 Apex Suite Cloud. All rights reserved.</span>
-      <div class="flex gap-md">
-        <a class="text-white/60 hover:text-white transition-colors hover:scale-110 transform" href="#"><span class="material-symbols-outlined text-[20px]">language</span></a>
-        <a class="text-white/60 hover:text-white transition-colors hover:scale-110 transform" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a>
-      </div>
-    </div>
-  </footer>
+
+        <div
+            class="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-lg w-full px-margin-mobile md:px-margin-desktop py-xl max-w-7xl mx-auto text-white">
+            <div>
+                <a class="font-headline-md text-headline-md font-bold text-white mb-md block flex items-center gap-2 hover:opacity-90 transition-opacity"
+                    href="index.html">
+                    <img src="images/logo.webp" alt="Apex Suite Cloud Logo" class="h-8 w-auto brightness-0 invert">
+                    Apex Suite Cloud
+                </a>
+                <p class="font-label-sm text-label-sm text-white/70 mb-lg max-w-xs leading-relaxed">The intelligent
+                    foundation for modern enterprise operations. Scalable, secure, and predictive.</p>
+                <div
+                    class="inline-flex items-center gap-sm bg-white/5 border border-white/10 rounded-full px-4 py-2 backdrop-blur-md">
+                    <div class="w-2 h-2 rounded-full bg-green-400 shadow-[0_0_10px_rgba(74,222,128,0.8)]"></div>
+                    <span class="font-label-sm text-white/90">System Status: Operational</span>
+                </div>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-label-md text-white font-semibold mb-xs tracking-wide">Product</span>
+                <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all"
+                    href="#">Intelligent ERP</a>
+                <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all"
+                    href="#">Smart Billing</a>
+                <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all"
+                    href="#">Predictive CRM</a>
+                <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all"
+                    href="pricing.html">Pricing</a>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-label-md text-white font-semibold mb-xs tracking-wide">Company</span>
+                <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all"
+                    href="#">About Us</a>
+                <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all"
+                    href="#">Careers</a>
+                <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all"
+                    href="blog.html">Blog</a>
+                <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all"
+                    href="contact-us.html">Contact</a>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-label-md text-white font-semibold mb-xs tracking-wide">Legal</span>
+                <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all"
+                    href="#">Privacy Policy</a>
+                <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all"
+                    href="#">Terms of Service</a>
+                <a class="font-label-sm text-label-sm text-white/70 hover:text-white hover:translate-x-1 transition-all"
+                    href="#">Security</a>
+            </div>
+        </div>
+        <div
+            class="relative z-10 border-t border-white/10 w-full px-margin-mobile md:px-margin-desktop py-md max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <span class="font-label-sm text-label-sm text-white/60">© 2024 Apex Suite Cloud. All rights reserved.</span>
+            <div class="flex gap-md">
+                <a class="text-white/60 hover:text-white transition-colors hover:scale-110 transform" href="#"><span
+                        class="material-symbols-outlined text-[20px]">language</span></a>
+                <a class="text-white/60 hover:text-white transition-colors hover:scale-110 transform" href="#"><span
+                        class="material-symbols-outlined text-[20px]">share</span></a>
+            </div>
+        </div>
+    </footer>
     <!-- Interactive script for nav shadow on scroll -->
     <script src="js/main.js"></script>
 </body>
