@@ -191,3 +191,61 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// FormSubmit AJAX Handler
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.getElementById('contactForm');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<span>Sending...</span><span class="material-symbols-outlined text-[18px] animate-spin">refresh</span>';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(contactForm);
+            const action = contactForm.getAttribute('action');
+
+            fetch(action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success || data.success == "true") {
+                    submitBtn.innerHTML = '<span>Message Sent!</span><span class="material-symbols-outlined text-[18px]">check_circle</span>';
+                    submitBtn.classList.remove('bg-primary');
+                    submitBtn.classList.add('bg-green-600');
+                    contactForm.reset();
+                    
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalBtnText;
+                        submitBtn.classList.add('bg-primary');
+                        submitBtn.classList.remove('bg-green-600');
+                        submitBtn.disabled = false;
+                    }, 3000);
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                submitBtn.innerHTML = '<span>Error. Try Again</span><span class="material-symbols-outlined text-[18px]">error</span>';
+                submitBtn.classList.remove('bg-primary');
+                submitBtn.classList.add('bg-red-600');
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalBtnText;
+                    submitBtn.classList.add('bg-primary');
+                    submitBtn.classList.remove('bg-red-600');
+                    submitBtn.disabled = false;
+                }, 3000);
+            });
+        });
+    }
+});
