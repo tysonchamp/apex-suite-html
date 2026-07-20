@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Blog - Apex Suite Cloud</title>
+    <title>Contact Us - Apex Suite Cloud</title>
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
+    <!-- Design System Configuration -->
     <script src="js/tailwind-config.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="antialiased min-h-screen flex flex-col">
+<body
+    class="antialiased min-h-screen flex flex-col font-body-md text-body-md selection:bg-primary-container selection:text-on-primary-container">
     <!-- Global Ambient Background -->
     <div class="fixed inset-0 overflow-hidden pointer-events-none -z-50">
         <div
@@ -132,215 +131,91 @@
             </div>
         </div>
     </nav>
-    <!-- Main Content -->
-    <main class="flex-grow pt-32 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto w-full">
-        <!-- Header Section -->
-        <div class="mb-lg text-center max-w-3xl mx-auto">
-            <h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-background mb-sm">Insights
-                &amp; Intelligence</h1>
-            <p class="font-body-lg text-body-lg text-on-surface-variant">The latest perspectives on AI-driven enterprise
-                transformation, platform architecture, and operational excellence.</p>
+
+  <main class="flex-grow pt-32 pb-xl">
+    <!-- Hero Section -->
+    <section class="relative px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto py-xl text-center">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-b from-[#0354c8]/5 to-transparent rounded-3xl blur-3xl"></div>
+      <h1 class="font-headline-xl text-headline-xl text-on-surface mb-md">Empowering Modern Enterprises</h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
+        Apex Suite Cloud was born from a simple belief: enterprise software shouldn't be a bottleneck. It should be the intelligent foundation that propels your business forward. We build scalable, secure, and predictive tools for the modern workforce.
+      </p>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto py-xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-xl">
+        <div class="bg-surface-container-lowest p-xl rounded-2xl border border-surface-variant shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-16 h-16 bg-ice-blue rounded-xl flex items-center justify-center mb-md">
+            <span class="material-symbols-outlined text-[32px] text-electric-blue">rocket_launch</span>
+          </div>
+          <h2 class="font-headline-md text-headline-md text-on-surface mb-sm">Our Mission</h2>
+          <p class="font-body-md text-on-surface-variant leading-relaxed">
+            To unify siloed business operations through an intuitive, AI-driven platform. We strive to give every department—from sales to supply chain—the exact insights they need, precisely when they need them.
+          </p>
         </div>
-        <!-- Featured Post (Bento style) -->
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-xl">
-            <div
-                class="md:col-span-8 rounded-xl overflow-hidden ambient-shadow bg-surface-container-lowest relative group cursor-pointer border border-surface-container-high">
-                <div class="h-64 md:h-full w-full relative">
-                    <img class="object-cover w-full h-full absolute inset-0 transition-transform duration-700 group-hover:scale-105"
-                        data-alt="A futuristic data visualization depicting enterprise resource planning in a bright, light-filled corporate environment. High-tech holographic displays float in a pristine, white architectural space. Soft, ambient lighting creates an airy, trustworthy feel. Subtle ice blue and electric royal blue accents highlight key data points, conveying organized intelligence."
-                        src="images/img_cf0441f6.png" />
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/40 to-transparent">
-                    </div>
-                </div>
-                <div class="absolute bottom-0 left-0 p-lg w-full">
-                    <div class="flex items-center gap-sm mb-sm">
-                        <span class="bg-primary text-on-primary font-label-sm text-label-sm px-sm py-xs rounded-full">AI
-                            Strategy</span>
-                        <span class="text-inverse-primary font-label-sm text-label-sm flex items-center gap-1"><span
-                                class="material-symbols-outlined text-[16px]">schedule</span> 8 min read</span>
-                    </div>
-                    <h2
-                        class="font-headline-lg text-headline-lg text-on-primary mb-sm group-hover:text-primary-fixed transition-colors">
-                        The Autonomous Enterprise: Integrating LLMs into Core ERP Workflows</h2>
-                    <p class="font-body-md text-body-md text-on-primary-container max-w-2xl hidden md:block">Discover
-                        how top-tier organizations are moving beyond simple chatbots to embed deep learning models
-                        directly into supply chain, finance, and human capital systems.</p>
-                </div>
-            </div>
-            <!-- Secondary Featured -->
-            <div class="md:col-span-4 flex flex-col gap-gutter">
-                <div
-                    class="flex-1 rounded-xl p-md bg-surface-container-lowest ambient-shadow-hover border border-surface-container-high cursor-pointer flex flex-col justify-between group">
-                    <div>
-                        <div class="flex items-center gap-sm mb-sm">
-                            <span
-                                class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-sm py-xs rounded-full">Fintech</span>
-                        </div>
-                        <h3
-                            class="font-headline-md text-headline-md text-on-background group-hover:text-primary transition-colors">
-                            Real-time Reconciliation at Scale</h3>
-                    </div>
-                    <div class="flex items-center gap-sm mt-md">
-                        <span class="text-outline font-label-sm text-label-sm">By Sarah Jenkins</span>
-                        <span class="text-outline font-label-sm text-label-sm">•</span>
-                        <span class="text-outline font-label-sm text-label-sm">Oct 12, 2024</span>
-                    </div>
-                </div>
-                <div
-                    class="flex-1 rounded-xl p-md bg-surface-container-lowest ambient-shadow-hover border border-surface-container-high cursor-pointer flex flex-col justify-between group relative overflow-hidden">
-                    <div class="absolute top-0 right-0 p-sm opacity-10 group-hover:opacity-20 transition-opacity">
-                        <span class="material-symbols-outlined text-primary text-[64px]"
-                            style="font-variation-settings: 'FILL' 1;">monitoring</span>
-                    </div>
-                    <div class="relative z-10">
-                        <div class="flex items-center gap-sm mb-sm">
-                            <span
-                                class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full">Operations</span>
-                        </div>
-                        <h3
-                            class="font-headline-md text-headline-md text-on-background group-hover:text-primary transition-colors">
-                            Optimizing Cloud Spend Post-Migration</h3>
-                    </div>
-                    <div class="flex items-center gap-sm mt-md relative z-10">
-                        <span class="text-outline font-label-sm text-label-sm">By David Chen</span>
-                        <span class="text-outline font-label-sm text-label-sm">•</span>
-                        <span class="text-outline font-label-sm text-label-sm">Oct 10, 2024</span>
-                    </div>
-                </div>
-            </div>
+        <div class="bg-surface-container-lowest p-xl rounded-2xl border border-surface-variant shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-16 h-16 bg-ice-blue rounded-xl flex items-center justify-center mb-md">
+            <span class="material-symbols-outlined text-[32px] text-electric-blue">visibility</span>
+          </div>
+          <h2 class="font-headline-md text-headline-md text-on-surface mb-sm">Our Vision</h2>
+          <p class="font-body-md text-on-surface-variant leading-relaxed">
+            A future where intelligent automation handles the mundane, freeing human creativity to solve the world's most complex challenges. We envision a business landscape operating at peak efficiency, powered by Apex.
+          </p>
         </div>
-        <!-- Filters -->
-        <div class="flex flex-wrap items-center gap-sm mb-lg pb-md border-b border-surface-container-high">
-            <span class="font-label-md text-label-md text-on-surface-variant mr-sm">Filter by:</span>
-            <button
-                class="bg-primary-container text-on-primary-container font-label-md text-label-md px-md py-xs rounded-full border border-primary-container transition-colors">All
-                Topics</button>
-            <button
-                class="bg-transparent text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md px-md py-xs rounded-full border border-outline-variant transition-colors">Artificial
-                Intelligence</button>
-            <button
-                class="bg-transparent text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md px-md py-xs rounded-full border border-outline-variant transition-colors">ERP
-                Systems</button>
-            <button
-                class="bg-transparent text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md px-md py-xs rounded-full border border-outline-variant transition-colors">Fintech</button>
-            <button
-                class="bg-transparent text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md px-md py-xs rounded-full border border-outline-variant transition-colors">Operations</button>
+      </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="bg-electric-blue py-xl my-xl">
+      <div class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-lg text-center">
+        <div>
+          <h3 class="font-headline-xl text-white text-[48px] font-bold mb-xs">10+</h3>
+          <p class="font-label-md text-ice-blue">Years of Innovation</p>
         </div>
-        <!-- Blog Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter mb-xl">
-            <!-- Card 1 -->
-            <article
-                class="bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow-hover border border-surface-container-high flex flex-col group cursor-pointer">
-                <div class="h-48 overflow-hidden">
-                    <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                        data-alt="A clean, abstract rendering of interconnected nodes and data streams in a pristine, bright environment. The nodes are connected by glowing blue lines against a very light ice-blue background, representing secure data architecture. High-contrast and professional aesthetic."
-                        src="images/img_ab962d7f.png" />
-                </div>
-                <div class="p-md flex-grow flex flex-col">
-                    <div class="flex items-center justify-between mb-sm">
-                        <span
-                            class="text-primary font-label-sm text-label-sm bg-surface-container px-sm py-xs rounded">Architecture</span>
-                        <span class="text-outline font-label-sm text-label-sm">5 min read</span>
-                    </div>
-                    <h3
-                        class="font-headline-md text-headline-md text-on-background mb-sm group-hover:text-primary transition-colors">
-                        Microservices vs. Monolith: A Modern Perspective</h3>
-                    <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-md line-clamp-3">
-                        Re-evaluating architectural choices in the era of serverless computing and advanced container
-                        orchestration platforms.</p>
-                    <div class="flex items-center gap-sm mt-auto border-t border-surface-container pt-sm">
-                        <div
-                            class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-label-sm font-bold">
-                            AK</div>
-                        <span class="font-label-md text-label-md text-on-surface">Alex Kumar</span>
-                    </div>
-                </div>
-            </article>
-            <!-- Card 2 -->
-            <article
-                class="bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow-hover border border-surface-container-high flex flex-col group cursor-pointer">
-                <div class="h-48 overflow-hidden relative">
-                    <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                        data-alt="A high-tech digital workspace showing analytics dashboards on translucent screens floating in an airy, brightly lit white room. Elements of glassmorphism are visible in the interface design, with crisp blue and navy accents representing financial tech interfaces."
-                        src="images/img_52e1ea97.png" />
-                    <div
-                        class="absolute inset-0 border-[2px] border-transparent group-hover:border-primary/20 transition-colors pointer-events-none rounded-t-xl">
-                    </div>
-                </div>
-                <div class="p-md flex-grow flex flex-col">
-                    <div class="flex items-center justify-between mb-sm">
-                        <span
-                            class="text-primary font-label-sm text-label-sm bg-surface-container px-sm py-xs rounded ai-gradient-text font-bold">AI
-                            &amp; Analytics</span>
-                        <span class="text-outline font-label-sm text-label-sm">12 min read</span>
-                    </div>
-                    <h3
-                        class="font-headline-md text-headline-md text-on-background mb-sm group-hover:text-primary transition-colors">
-                        Predictive Modeling for Q4 Financial Forecasting</h3>
-                    <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-md line-clamp-3">Leveraging
-                        historical datasets and external market indicators to train robust predictive models for
-                        enterprise finance teams.</p>
-                    <div class="flex items-center gap-sm mt-auto border-t border-surface-container pt-sm">
-                        <div
-                            class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-label-sm font-bold">
-                            MR</div>
-                        <span class="font-label-md text-label-md text-on-surface">Maria Rodriguez</span>
-                    </div>
-                </div>
-            </article>
-            <!-- Card 3 -->
-            <article
-                class="bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow-hover border border-surface-container-high flex flex-col group cursor-pointer">
-                <div class="h-48 overflow-hidden bg-surface-container flex items-center justify-center">
-                    <span
-                        class="material-symbols-outlined text-[80px] text-primary/20 group-hover:text-primary/40 transition-colors group-hover:scale-110 duration-500">security</span>
-                </div>
-                <div class="p-md flex-grow flex flex-col">
-                    <div class="flex items-center justify-between mb-sm">
-                        <span
-                            class="text-primary font-label-sm text-label-sm bg-surface-container px-sm py-xs rounded">Security</span>
-                        <span class="text-outline font-label-sm text-label-sm">6 min read</span>
-                    </div>
-                    <h3
-                        class="font-headline-md text-headline-md text-on-background mb-sm group-hover:text-primary transition-colors">
-                        Zero-Trust Implementation Strategies</h3>
-                    <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-md line-clamp-3">Practical
-                        steps for transitioning legacy network architectures to a strict zero-trust model without
-                        disrupting operations.</p>
-                    <div class="flex items-center gap-sm mt-auto border-t border-surface-container pt-sm">
-                        <div
-                            class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-label-sm font-bold">
-                            JW</div>
-                        <span class="font-label-md text-label-md text-on-surface">James Wilson</span>
-                    </div>
-                </div>
-            </article>
+        <div>
+          <h3 class="font-headline-xl text-white text-[48px] font-bold mb-xs">500+</h3>
+          <p class="font-label-md text-ice-blue">Enterprise Clients</p>
         </div>
-        <!-- Pagination -->
-        <div class="flex justify-center items-center gap-sm mt-xl">
-            <button
-                class="w-10 h-10 rounded border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors disabled:opacity-50"
-                disabled="">
-                <span class="material-symbols-outlined text-[20px]">chevron_left</span>
-            </button>
-            <button
-                class="w-10 h-10 rounded bg-primary text-on-primary font-label-md font-bold flex items-center justify-center">1</button>
-            <button
-                class="w-10 h-10 rounded border border-outline-variant flex items-center justify-center text-on-surface-variant font-label-md hover:bg-surface-container hover:text-primary transition-colors">2</button>
-            <button
-                class="w-10 h-10 rounded border border-outline-variant flex items-center justify-center text-on-surface-variant font-label-md hover:bg-surface-container hover:text-primary transition-colors">3</button>
-            <span class="text-outline mx-xs">...</span>
-            <button
-                class="w-10 h-10 rounded border border-outline-variant flex items-center justify-center text-on-surface-variant font-label-md hover:bg-surface-container hover:text-primary transition-colors">12</button>
-            <button
-                class="w-10 h-10 rounded border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors">
-                <span class="material-symbols-outlined text-[20px]">chevron_right</span>
-            </button>
+        <div>
+          <h3 class="font-headline-xl text-white text-[48px] font-bold mb-xs">99.99%</h3>
+          <p class="font-label-md text-ice-blue">Platform Uptime</p>
         </div>
-    </main>
-    <!-- Footer -->
-    <footer
+      </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto py-xl">
+      <div class="text-center mb-xl">
+        <h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Our Core Values</h2>
+        <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">The principles that guide our product development and customer relationships every single day.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-md">
+        <div class="text-center p-md">
+          <span class="material-symbols-outlined text-[48px] text-electric-blue mb-sm">lightbulb</span>
+          <h4 class="font-label-md text-on-surface font-bold mb-xs">Innovation First</h4>
+          <p class="font-body-md text-on-surface-variant text-sm">Always pushing the boundaries of what cloud tech can do.</p>
+        </div>
+        <div class="text-center p-md">
+          <span class="material-symbols-outlined text-[48px] text-electric-blue mb-sm">verified_user</span>
+          <h4 class="font-label-md text-on-surface font-bold mb-xs">Uncompromising Security</h4>
+          <p class="font-body-md text-on-surface-variant text-sm">Your data's safety is built into our foundational architecture.</p>
+        </div>
+        <div class="text-center p-md">
+          <span class="material-symbols-outlined text-[48px] text-electric-blue mb-sm">handshake</span>
+          <h4 class="font-label-md text-on-surface font-bold mb-xs">Customer Success</h4>
+          <p class="font-body-md text-on-surface-variant text-sm">We only win when your business reaches its full potential.</p>
+        </div>
+        <div class="text-center p-md">
+          <span class="material-symbols-outlined text-[48px] text-electric-blue mb-sm">speed</span>
+          <h4 class="font-label-md text-on-surface font-bold mb-xs">Extreme Reliability</h4>
+          <p class="font-body-md text-on-surface-variant text-sm">Scalable infrastructure designed for peak performance.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer
         class="relative bg-gradient-to-br from-deep-navy via-[#023e98] to-deep-navy border-t border-white/10 shadow-[0_-15px_40px_rgba(3,84,200,0.15)] overflow-hidden transition-all duration-200">
         <!-- Ambient Footer Glow -->
         <div
