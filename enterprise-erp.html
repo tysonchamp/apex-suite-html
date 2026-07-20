@@ -126,7 +126,7 @@
         </div>
     </nav>
 
-  <main class="flex-grow pt-32 pb-xl">
+  <main class="flex-grow pt-32">
     <!-- Hero Section -->
     <section class="relative px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto py-xl text-center">
       <div class="absolute inset-0 -z-10 bg-gradient-to-br from-purple-600/15 to-transparent rounded-3xl blur-3xl"></div>
@@ -138,120 +138,6 @@
       <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
         Scale your operations with unprecedented power. Manage multiple businesses, franchises, and locations from a single, unified cloud infrastructure designed for maximum growth.
       </p>
-    </section>
-
-    <!-- Pricing Calculator Section -->
-    <section class="bg-purple-700 py-xl my-xl">
-      <div class="px-margin-mobile md:px-margin-desktop max-w-6xl mx-auto">
-        <div class="text-center mb-xl">
-          <h2 class="font-headline-lg text-headline-lg text-white mb-sm">Customizable Pricing Calculator</h2>
-          <p class="font-body-md text-white/80 max-w-2xl mx-auto">Pay only for what you need. Scale your infrastructure instantly.</p>
-        </div>
-        
-        <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-xl flex flex-col lg:flex-row gap-xl border border-purple-500/30">
-          
-          <!-- Configuration -->
-          <div class="flex-1">
-            <h3 class="font-headline-sm text-on-surface font-bold mb-md">Configure Your System</h3>
-            
-            <div class="space-y-6">
-              <!-- Base System -->
-              <div class="p-4 bg-purple-50 rounded-xl border border-purple-100 flex justify-between items-center">
-                <div>
-                  <h4 class="font-label-lg font-bold text-on-surface">Base System</h4>
-                  <p class="text-xs text-on-surface-variant mt-1">Includes 1 Business, 1 Location, 1 Staff</p>
-                </div>
-                <div class="font-label-lg font-bold text-purple-700">₹18,000</div>
-              </div>
-              
-              <!-- Extra Businesses -->
-              <div>
-                <div class="flex justify-between items-end mb-2">
-                  <div>
-                    <label class="font-label-md font-bold text-on-surface">Extra Businesses</label>
-                    <p class="text-xs text-on-surface-variant">Each adds +1 Location, +1 Staff (₹10,000/yr)</p>
-                  </div>
-                  <span class="font-label-lg font-bold text-primary" id="calc-biz-cost">₹0</span>
-                </div>
-                <div class="flex items-center gap-4">
-                  <input type="range" id="input-biz" min="0" max="10" value="0" class="w-full h-2 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-purple-600">
-                  <span class="w-12 text-center font-bold text-on-surface bg-surface-container-low py-1 rounded" id="display-biz">0</span>
-                </div>
-              </div>
-              
-              <!-- Extra Locations -->
-              <div>
-                <div class="flex justify-between items-end mb-2">
-                  <div>
-                    <label class="font-label-md font-bold text-on-surface">Extra Locations / Franchises</label>
-                    <p class="text-xs text-on-surface-variant">Each adds +1 Staff (₹3,500/yr)</p>
-                  </div>
-                  <span class="font-label-lg font-bold text-primary" id="calc-loc-cost">₹0</span>
-                </div>
-                <div class="flex items-center gap-4">
-                  <input type="range" id="input-loc" min="0" max="20" value="0" class="w-full h-2 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-purple-600">
-                  <span class="w-12 text-center font-bold text-on-surface bg-surface-container-low py-1 rounded" id="display-loc">0</span>
-                </div>
-              </div>
-              
-              <!-- Extra Staff -->
-              <div>
-                <div class="flex justify-between items-end mb-2">
-                  <div>
-                    <label class="font-label-md font-bold text-on-surface">Extra Staff Users</label>
-                    <p class="text-xs text-on-surface-variant">Role-based user accounts (₹1,200/yr)</p>
-                  </div>
-                  <span class="font-label-lg font-bold text-primary" id="calc-staff-cost">₹0</span>
-                </div>
-                <div class="flex items-center gap-4">
-                  <input type="range" id="input-staff" min="0" max="50" value="0" class="w-full h-2 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-purple-600">
-                  <span class="w-12 text-center font-bold text-on-surface bg-surface-container-low py-1 rounded" id="display-staff">0</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Summary -->
-          <div class="lg:w-[380px] bg-surface-container-lowest rounded-2xl border border-surface-variant p-lg shadow-sm flex flex-col">
-            <h3 class="font-headline-sm text-on-surface font-bold mb-md">Your Estimated Quote</h3>
-            
-            <div class="flex-grow">
-              <h4 class="font-label-sm text-on-surface-variant font-bold uppercase tracking-wider mb-sm">Total Included Capacity</h4>
-              <ul class="space-y-3 mb-xl">
-                <li class="flex items-center justify-between">
-                  <div class="flex items-center gap-2 text-on-surface">
-                    <span class="material-symbols-outlined text-[18px] text-purple-500">store</span>
-                    <span>Total Businesses</span>
-                  </div>
-                  <span class="font-bold text-lg" id="total-biz">1</span>
-                </li>
-                <li class="flex items-center justify-between">
-                  <div class="flex items-center gap-2 text-on-surface">
-                    <span class="material-symbols-outlined text-[18px] text-purple-500">location_on</span>
-                    <span>Total Locations</span>
-                  </div>
-                  <span class="font-bold text-lg" id="total-loc">1</span>
-                </li>
-                <li class="flex items-center justify-between">
-                  <div class="flex items-center gap-2 text-on-surface">
-                    <span class="material-symbols-outlined text-[18px] text-purple-500">manage_accounts</span>
-                    <span>Total Staff</span>
-                  </div>
-                  <span class="font-bold text-lg" id="total-staff">1</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="border-t border-surface-variant pt-md mb-md">
-              <div class="text-on-surface-variant font-label-md mb-1">Yearly Total</div>
-              <div class="font-headline-xl text-purple-700 font-bold" id="total-price">₹18,000</div>
-            </div>
-            
-            <a href="contact-us.html" class="block w-full py-3 px-4 bg-purple-700 text-white text-center rounded-lg font-label-lg font-semibold hover:bg-purple-800 transition-colors shadow-sm">Proceed With Setup</a>
-          </div>
-          
-        </div>
-      </div>
     </section>
 
     <!-- Massive Features Grid -->
@@ -472,76 +358,149 @@
         </div>
       </div>
     </section>
-  </main>
+  <!-- Pricing Calculator Section -->
+    <section class="bg-purple-700 py-xl">
+      <div class="px-margin-mobile md:px-margin-desktop max-w-6xl mx-auto">
+        <div class="text-center mb-xl">
+          <h2 class="font-headline-lg text-headline-lg text-white mb-sm">Customizable Pricing Calculator</h2>
+          <p class="font-body-md text-white/80 max-w-2xl mx-auto">Pay only for what you need. Scale your infrastructure instantly.</p>
+        </div>
+        
+        <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-xl flex flex-col lg:flex-row gap-xl border border-purple-500/30">
+          
+          <!-- Configuration -->
+          <div class="flex-1">
+            <h3 class="font-headline-sm text-on-surface font-bold mb-md">Configure Your System</h3>
+            
+            <div class="space-y-6">
+              <!-- Base System -->
+              <div class="p-4 bg-purple-50 rounded-xl border border-purple-100 flex justify-between items-center">
+                <div>
+                  <h4 class="font-label-lg font-bold text-on-surface">Base System</h4>
+                  <p class="text-xs text-on-surface-variant mt-1">Includes 1 Business, 1 Location, 1 Staff</p>
+                </div>
+                <div class="font-label-lg font-bold text-purple-700">₹18,000</div>
+              </div>
+              
+              <!-- Extra Businesses -->
+              <div>
+                <div class="flex justify-between items-end mb-2">
+                  <div>
+                    <label class="font-label-md font-bold text-on-surface">Extra Businesses</label>
+                    <p class="text-xs text-on-surface-variant">Each adds +1 Location, +1 Staff (₹10,000/yr)</p>
+                  </div>
+                  <span class="font-label-lg font-bold text-primary" id="calc-biz-cost">₹0</span>
+                </div>
+                <div class="flex items-center gap-4">
+                  <input type="range" id="input-biz" min="0" max="10" value="0" class="w-full h-2 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-purple-600">
+                  <span class="w-12 text-center font-bold text-on-surface bg-surface-container-low py-1 rounded" id="display-biz">0</span>
+                </div>
+              </div>
+              
+              <!-- Extra Locations -->
+              <div>
+                <div class="flex justify-between items-end mb-2">
+                  <div>
+                    <label class="font-label-md font-bold text-on-surface">Extra Locations / Franchises</label>
+                    <p class="text-xs text-on-surface-variant">Each adds +1 Staff (₹3,500/yr)</p>
+                  </div>
+                  <span class="font-label-lg font-bold text-primary" id="calc-loc-cost">₹0</span>
+                </div>
+                <div class="flex items-center gap-4">
+                  <input type="range" id="input-loc" min="0" max="20" value="0" class="w-full h-2 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-purple-600">
+                  <span class="w-12 text-center font-bold text-on-surface bg-surface-container-low py-1 rounded" id="display-loc">0</span>
+                </div>
+              </div>
+              
+              <!-- Extra Staff -->
+              <div>
+                <div class="flex justify-between items-end mb-2">
+                  <div>
+                    <label class="font-label-md font-bold text-on-surface">Extra Staff Users</label>
+                    <p class="text-xs text-on-surface-variant">Role-based user accounts (₹1,200/yr)</p>
+                  </div>
+                  <span class="font-label-lg font-bold text-primary" id="calc-staff-cost">₹0</span>
+                </div>
+                <div class="flex items-center gap-4">
+                  <input type="range" id="input-staff" min="0" max="50" value="0" class="w-full h-2 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-purple-600">
+                  <span class="w-12 text-center font-bold text-on-surface bg-surface-container-low py-1 rounded" id="display-staff">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Summary -->
+          <div class="lg:w-[380px] bg-surface-container-lowest rounded-2xl border border-surface-variant p-lg shadow-sm flex flex-col">
+            <h3 class="font-headline-sm text-on-surface font-bold mb-md">Your Estimated Quote</h3>
+            
+            <div class="flex-grow">
+              <h4 class="font-label-sm text-on-surface-variant font-bold uppercase tracking-wider mb-sm">Total Included Capacity</h4>
+              <ul class="space-y-3 mb-xl">
+                <li class="flex items-center justify-between">
+                  <div class="flex items-center gap-2 text-on-surface">
+                    <span class="material-symbols-outlined text-[18px] text-purple-500">store</span>
+                    <span>Total Businesses</span>
+                  </div>
+                  <span class="font-bold text-lg" id="total-biz">1</span>
+                </li>
+                <li class="flex items-center justify-between">
+                  <div class="flex items-center gap-2 text-on-surface">
+                    <span class="material-symbols-outlined text-[18px] text-purple-500">location_on</span>
+                    <span>Total Locations</span>
+                  </div>
+                  <span class="font-bold text-lg" id="total-loc">1</span>
+                </li>
+                <li class="flex items-center justify-between">
+                  <div class="flex items-center gap-2 text-on-surface">
+                    <span class="material-symbols-outlined text-[18px] text-purple-500">manage_accounts</span>
+                    <span>Total Staff</span>
+                  </div>
+                  <span class="font-bold text-lg" id="total-staff">1</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="border-t border-surface-variant pt-md mb-md">
+              <div class="text-on-surface-variant font-label-md mb-1">Yearly Total</div>
+              <div class="font-headline-xl text-purple-700 font-bold" id="total-price">₹18,000</div>
+            </div>
+            
+            <a href="contact-us.html" class="block w-full py-3 px-4 bg-purple-700 text-white text-center rounded-lg font-label-lg font-semibold hover:bg-purple-800 transition-colors shadow-sm">Proceed With Setup</a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const inputBiz = document.getElementById('input-biz');
-      const inputLoc = document.getElementById('input-loc');
-      const inputStaff = document.getElementById('input-staff');
-      
-      const displayBiz = document.getElementById('display-biz');
-      const displayLoc = document.getElementById('display-loc');
-      const displayStaff = document.getElementById('display-staff');
-      
-      const calcBizCost = document.getElementById('calc-biz-cost');
-      const calcLocCost = document.getElementById('calc-loc-cost');
-      const calcStaffCost = document.getElementById('calc-staff-cost');
-      
-      const totalBiz = document.getElementById('total-biz');
-      const totalLoc = document.getElementById('total-loc');
-      const totalStaff = document.getElementById('total-staff');
-      
-      const totalPrice = document.getElementById('total-price');
-      
-      const BASE_COST = 18000;
-      const BIZ_COST = 10000;
-      const LOC_COST = 3500;
-      const STAFF_COST = 1200;
-      
-      function calculate() {
-        const extraBiz = parseInt(inputBiz.value);
-        const extraLoc = parseInt(inputLoc.value);
-        const extraStaff = parseInt(inputStaff.value);
+    
+    <!-- Enterprise Security & Support Section -->
+    <section class="bg-surface-container-low py-xl">
+      <div class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+        <div class="text-center mb-xl">
+          <h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Why Choose Apex Enterprise?</h2>
+          <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Built for scale, secured for compliance, and supported by experts.</p>
+        </div>
         
-        // Update displays next to sliders
-        displayBiz.textContent = extraBiz;
-        displayLoc.textContent = extraLoc;
-        displayStaff.textContent = extraStaff;
-        
-        // Calculate costs
-        const costBiz = extraBiz * BIZ_COST;
-        const costLoc = extraLoc * LOC_COST;
-        const costStaff = extraStaff * STAFF_COST;
-        
-        // Update cost labels
-        calcBizCost.textContent = '₹' + costBiz.toLocaleString();
-        calcLocCost.textContent = '₹' + costLoc.toLocaleString();
-        calcStaffCost.textContent = '₹' + costStaff.toLocaleString();
-        
-        // Calculate allowances
-        // Base gives: 1 biz, 1 loc, 1 staff
-        // Each extra biz gives: +1 biz, +1 loc, +1 staff
-        // Each extra loc gives: +1 loc, +1 staff
-        // Each extra staff gives: +1 staff
-        const allowedBiz = 1 + extraBiz;
-        const allowedLoc = 1 + extraBiz + extraLoc;
-        const allowedStaff = 1 + extraBiz + extraLoc + extraStaff;
-        
-        totalBiz.textContent = allowedBiz;
-        totalLoc.textContent = allowedLoc;
-        totalStaff.textContent = allowedStaff;
-        
-        // Calculate total
-        const finalPrice = BASE_COST + costBiz + costLoc + costStaff;
-        totalPrice.textContent = '₹' + finalPrice.toLocaleString();
-      }
-      
-      inputBiz.addEventListener('input', calculate);
-      inputLoc.addEventListener('input', calculate);
-      inputStaff.addEventListener('input', calculate);
-    });
-  </script>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+          <div class="text-center p-lg bg-white rounded-2xl shadow-sm border border-surface-variant hover:shadow-md transition-shadow">
+            <span class="material-symbols-outlined text-[48px] text-purple-600 mb-md">shield_locked</span>
+            <h3 class="font-headline-sm font-bold text-on-surface mb-sm">Bank-Grade Security</h3>
+            <p class="font-body-sm text-on-surface-variant">Your data is encrypted at rest and in transit. Role-based access ensures complete control over your sensitive business information.</p>
+          </div>
+          <div class="text-center p-lg bg-white rounded-2xl shadow-sm border border-surface-variant hover:shadow-md transition-shadow">
+            <span class="material-symbols-outlined text-[48px] text-purple-600 mb-md">support_agent</span>
+            <h3 class="font-headline-sm font-bold text-on-surface mb-sm">24/7 Priority Support</h3>
+            <p class="font-body-sm text-on-surface-variant">Enterprise clients receive a dedicated account manager and round-the-clock priority technical support.</p>
+          </div>
+          <div class="text-center p-lg bg-white rounded-2xl shadow-sm border border-surface-variant hover:shadow-md transition-shadow">
+            <span class="material-symbols-outlined text-[48px] text-purple-600 mb-md">architecture</span>
+            <h3 class="font-headline-sm font-bold text-on-surface mb-sm">Custom API Integrations</h3>
+            <p class="font-body-sm text-on-surface-variant">Need to connect with existing legacy software? Our team provides custom development and API hooks upon request.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+</main>
 
 <footer
         class="relative bg-gradient-to-br from-deep-navy via-[#023e98] to-deep-navy border-t border-white/10 shadow-[0_-15px_40px_rgba(3,84,200,0.15)] overflow-hidden transition-all duration-200">

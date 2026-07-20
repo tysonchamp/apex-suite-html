@@ -93,3 +93,65 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+// Enterprise ERP Pricing Calculator
+document.addEventListener('DOMContentLoaded', function() {
+    const inputBiz = document.getElementById('input-biz');
+    if (!inputBiz) return; // Only run on pages with the calculator
+
+    const inputLoc = document.getElementById('input-loc');
+    const inputStaff = document.getElementById('input-staff');
+    
+    const displayBiz = document.getElementById('display-biz');
+    const displayLoc = document.getElementById('display-loc');
+    const displayStaff = document.getElementById('display-staff');
+    
+    const calcBizCost = document.getElementById('calc-biz-cost');
+    const calcLocCost = document.getElementById('calc-loc-cost');
+    const calcStaffCost = document.getElementById('calc-staff-cost');
+    
+    const totalBiz = document.getElementById('total-biz');
+    const totalLoc = document.getElementById('total-loc');
+    const totalStaff = document.getElementById('total-staff');
+    
+    const totalPrice = document.getElementById('total-price');
+    
+    const BASE_COST = 18000;
+    const BIZ_COST = 10000;
+    const LOC_COST = 3500;
+    const STAFF_COST = 1200;
+    
+    function calculate() {
+        const extraBiz = parseInt(inputBiz.value);
+        const extraLoc = parseInt(inputLoc.value);
+        const extraStaff = parseInt(inputStaff.value);
+        
+        displayBiz.textContent = extraBiz;
+        displayLoc.textContent = extraLoc;
+        displayStaff.textContent = extraStaff;
+        
+        const costBiz = extraBiz * BIZ_COST;
+        const costLoc = extraLoc * LOC_COST;
+        const costStaff = extraStaff * STAFF_COST;
+        
+        calcBizCost.textContent = '₹' + costBiz.toLocaleString();
+        calcLocCost.textContent = '₹' + costLoc.toLocaleString();
+        calcStaffCost.textContent = '₹' + costStaff.toLocaleString();
+        
+        const allowedBiz = 1 + extraBiz;
+        const allowedLoc = 1 + extraBiz + extraLoc;
+        const allowedStaff = 1 + extraBiz + extraLoc + extraStaff;
+        
+        totalBiz.textContent = allowedBiz;
+        totalLoc.textContent = allowedLoc;
+        totalStaff.textContent = allowedStaff;
+        
+        const finalPrice = BASE_COST + costBiz + costLoc + costStaff;
+        totalPrice.textContent = '₹' + finalPrice.toLocaleString();
+    }
+    
+    inputBiz.addEventListener('input', calculate);
+    inputLoc.addEventListener('input', calculate);
+    inputStaff.addEventListener('input', calculate);
+});
