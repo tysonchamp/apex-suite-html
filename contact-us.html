@@ -21,40 +21,38 @@
 <body
     class="antialiased min-h-screen flex flex-col font-body-md text-body-md selection:bg-primary-container selection:text-on-primary-container">
     <!-- TopNavBar Component -->
-    <nav id="global-nav"
-        class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/20 dark:border-white/10 shadow-sm transition-all duration-300">
+        <nav class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/20 dark:border-white/10 shadow-sm transition-all duration-300">
         <div class="flex justify-between items-center h-16 px-margin-desktop max-w-[1440px] mx-auto">
             <div class="flex items-center gap-md">
-                <a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity"
-                    href="index.html">
-                    Apex Suite Cloud
+                <a class="flex items-center gap-2 font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity" href="index.html">
+                    <img src="images/logo.webp" alt="Apex Suite Cloud Logo" class="h-8 w-auto">
                 </a>
             </div>
             <div class="hidden md:flex items-center gap-gutter font-label-md text-label-md">
-                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform"
-                    href="#">
-                    Solutions
-                </a>
-                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform"
-                    href="#">
-                    Platform
-                </a>
-                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform"
-                    href="blog.html">
-                    Resources
-                </a>
-                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform"
-                    href="pricing.html">
-                    Pricing
-                </a>
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="index.html">Home</a>
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="#">About Us</a>
+                
+                <div class="relative group">
+                    <button class="flex items-center gap-1 text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform">
+                        Services
+                        <span class="material-symbols-outlined text-[18px]">expand_more</span>
+                    </button>
+                    <div class="absolute left-0 mt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-white dark:bg-inverse-surface border border-surface-variant rounded-md shadow-lg overflow-hidden z-50">
+                        <a href="#" class="block px-4 py-3 text-sm text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors">1. Service Sector ERP</a>
+                        <a href="#" class="block px-4 py-3 text-sm text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors">2. Inventory & Billing System</a>
+                        <a href="#" class="block px-4 py-3 text-sm text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors">3. CRM</a>
+                    </div>
+                </div>
+
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="faqs.html">FAQ</a>
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="pricing.html">Pricing</a>
+                <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-variant/10 transition-colors duration-200 px-3 py-2 rounded-md active:scale-95 transition-transform" href="contact-us.html">Contact Us</a>
             </div>
             <div class="flex items-center gap-sm">
-                <button
-                    class="hidden md:inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 border border-outline-variant text-primary hover:bg-[#E6F0FF] rounded-lg transition-colors bg-transparent active:scale-95 transition-transform">
+                <button class="hidden md:inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 border border-outline-variant text-primary hover:bg-[#E6F0FF] rounded-lg transition-colors bg-transparent active:scale-95 transition-transform">
                     Log In
                 </button>
-                <button onclick="window.location.href='contact-us.html'"
-                    class="inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 bg-[#0052cc] text-white hover:bg-primary rounded-lg shadow-sm transition-colors active:scale-95 transition-transform">
+                <button onclick="window.location.href='contact-us.html'" class="inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 bg-[#0052cc] text-white hover:bg-primary rounded-lg shadow-sm transition-colors active:scale-95 transition-transform">
                     Book a Demo
                 </button>
                 <button class="md:hidden p-2 text-on-surface-variant">
@@ -205,63 +203,62 @@
     </div>
     <!-- Footer Component -->
     <footer
-        class="bg-surface-container-low dark:bg-surface-container-highest border-t border-surface-variant dark:border-outline-variant transition-all duration-200">
-        <div
-            class="grid grid-cols-1 md:grid-cols-4 gap-md w-full px-margin-mobile md:px-margin-desktop py-lg max-w-7xl mx-auto">
-            <div>
-                <a class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface mb-md block"
-                    href="index.html">Apex Suite Cloud</a>
-                <p class="font-label-sm text-label-sm text-on-surface-variant mb-md max-w-xs">The intelligent foundation
-                    for modern enterprise operations. Scalable, secure, and predictive.</p>
-                <div
-                    class="inline-flex items-center gap-xs bg-ice-blue border border-surface-variant rounded-full px-sm py-xs">
-                    <div class="w-2 h-2 rounded-full bg-primary-container"></div>
-                    <span class="font-label-sm text-on-surface">System Status: Operational</span>
-                </div>
-            </div>
-            <div class="flex flex-col gap-sm">
-                <span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Product</span>
-                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
-                    href="#">Intelligent ERP</a>
-                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
-                    href="#">Smart Billing</a>
-                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
-                    href="#">Predictive CRM</a>
-                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
-                    href="pricing.html">Pricing</a>
-            </div>
-            <div class="flex flex-col gap-sm">
-                <span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Company</span>
-                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
-                    href="#">About Us</a>
-                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
-                    href="#">Careers</a>
-                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
-                    href="blog.html">Blog</a>
-                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
-                    href="contact-us.html">Contact</a>
-            </div>
-            <div class="flex flex-col gap-sm">
-                <span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Legal</span>
-                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
-                    href="#">Privacy Policy</a>
-                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
-                    href="#">Terms of Service</a>
-                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
-                    href="#">Security</a>
-            </div>
+    class="bg-surface-container-low dark:bg-surface-container-highest border-t border-surface-variant dark:border-outline-variant transition-all duration-200">
+    <div
+      class="grid grid-cols-1 md:grid-cols-4 gap-md w-full px-margin-mobile md:px-margin-desktop py-lg max-w-7xl mx-auto">
+      <div>
+        <a class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface mb-md block"
+          href="index.html">Apex Suite Cloud</a>
+        <p class="font-label-sm text-label-sm text-on-surface-variant mb-md max-w-xs">The intelligent foundation for
+          modern enterprise operations. Scalable, secure, and predictive.</p>
+        <div class="inline-flex items-center gap-xs bg-ice-blue border border-surface-variant rounded-full px-sm py-xs">
+          <div class="w-2 h-2 rounded-full bg-primary-container"></div>
+          <span class="font-label-sm text-on-surface">System Status: Operational</span>
         </div>
-        <div
-            class="border-t border-surface-variant w-full px-margin-mobile md:px-margin-desktop py-md max-w-7xl mx-auto flex justify-between items-center">
-            <span class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Apex Suite Cloud. All rights
-                reserved.</span>
-            <div class="flex gap-sm">
-                <!-- Social Placeholders -->
-                <a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span
-                        class="material-symbols-outlined text-[20px]">language</span></a>
-            </div>
-        </div>
-    </footer>
+      </div>
+      <div class="flex flex-col gap-sm">
+        <span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Product</span>
+        <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+          href="#">Intelligent ERP</a>
+        <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+          href="#">Smart Billing</a>
+        <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+          href="#">Predictive CRM</a>
+        <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+          href="pricing.html">Pricing</a>
+      </div>
+      <div class="flex flex-col gap-sm">
+        <span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Company</span>
+        <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+          href="#">About Us</a>
+        <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+          href="#">Careers</a>
+        <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+          href="blog.html">Blog</a>
+        <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+          href="contact-us.html">Contact</a>
+      </div>
+      <div class="flex flex-col gap-sm">
+        <span class="font-label-md text-label-md text-on-surface font-semibold mb-xs">Legal</span>
+        <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+          href="#">Privacy Policy</a>
+        <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+          href="#">Terms of Service</a>
+        <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+          href="#">Security</a>
+      </div>
+    </div>
+    <div
+      class="border-t border-surface-variant w-full px-margin-mobile md:px-margin-desktop py-md max-w-7xl mx-auto flex justify-between items-center">
+      <span class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Apex Suite Cloud. All rights
+        reserved.</span>
+      <div class="flex gap-sm">
+        <!-- Social Placeholders -->
+        <a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span
+            class="material-symbols-outlined text-[20px]">language</span></a>
+      </div>
+    </div>
+  </footer>
     <!-- Interactive script for nav shadow on scroll -->
     <script src="js/main.js"></script>
 </body>
