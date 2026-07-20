@@ -21,7 +21,7 @@
 <body
     class="antialiased min-h-screen flex flex-col font-body-md text-body-md selection:bg-primary-container selection:text-on-primary-container">
     <!-- TopNavBar Component -->
-        <nav class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/20 dark:border-white/10 shadow-sm transition-all duration-300">
+            <nav class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/20 dark:border-white/10 shadow-sm transition-all duration-300">
         <div class="flex justify-between items-center h-16 px-margin-desktop max-w-[1440px] mx-auto">
             <div class="flex items-center gap-md">
                 <a class="flex items-center gap-2 font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity" href="index.html">
@@ -52,11 +52,39 @@
                 <button class="hidden md:inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 border border-outline-variant text-primary hover:bg-[#E6F0FF] rounded-lg transition-colors bg-transparent active:scale-95 transition-transform">
                     Log In
                 </button>
-                <button onclick="window.location.href='contact-us.html'" class="inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 bg-[#0052cc] text-white hover:bg-primary rounded-lg shadow-sm transition-colors active:scale-95 transition-transform">
+                <button onclick="window.location.href='contact-us.html'" class="inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 bg-[#0354c8] text-white hover:bg-[#023e98] rounded-lg shadow-sm transition-colors active:scale-95 transition-transform">
                     Book a Demo
                 </button>
-                <button class="md:hidden p-2 text-on-surface-variant">
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface-variant hover:text-primary transition-colors">
                     <span class="material-symbols-outlined" data-icon="menu">menu</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-inverse-surface border-t border-surface-variant/50 px-margin-mobile py-4 flex-col gap-2 shadow-lg h-[calc(100vh-64px)] overflow-y-auto">
+            <a class="text-on-surface-variant font-label-md hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-3 rounded-md" href="index.html">Home</a>
+            <a class="text-on-surface-variant font-label-md hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-3 rounded-md" href="#">About Us</a>
+            
+            <div class="py-2 px-4">
+                <div class="text-on-surface-variant font-semibold mb-2 font-label-md">Services</div>
+                <div class="flex flex-col gap-1 pl-4 border-l-2 border-surface-variant/50">
+                    <a href="#" class="text-on-surface-variant text-sm hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-2 rounded-md">1. Service Sector ERP</a>
+                    <a href="#" class="text-on-surface-variant text-sm hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-2 rounded-md">2. Inventory & Billing System</a>
+                    <a href="#" class="text-on-surface-variant text-sm hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-2 rounded-md">3. CRM</a>
+                </div>
+            </div>
+
+            <a class="text-on-surface-variant font-label-md hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-3 rounded-md" href="faqs.html">FAQ</a>
+            <a class="text-on-surface-variant font-label-md hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-3 rounded-md" href="pricing.html">Pricing</a>
+            <a class="text-on-surface-variant font-label-md hover:text-primary hover:bg-surface-container-low transition-colors block px-4 py-3 rounded-md" href="contact-us.html">Contact Us</a>
+            
+            <div class="mt-4 flex flex-col gap-3 border-t border-surface-variant/50 pt-6 px-4">
+                <button class="w-full font-label-md text-label-md px-4 py-3 border border-outline-variant text-primary hover:bg-ice-blue rounded-lg transition-colors bg-transparent">
+                    Log In
+                </button>
+                <button onclick="window.location.href='contact-us.html'" class="w-full font-label-md text-label-md px-4 py-3 bg-[#0354c8] text-white hover:bg-[#023e98] rounded-lg shadow-sm transition-colors">
+                    Book a Demo
                 </button>
             </div>
         </div>

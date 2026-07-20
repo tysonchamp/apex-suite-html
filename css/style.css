@@ -15,7 +15,7 @@ body {
 }
 
 .ai-gradient-text {
-    background: linear-gradient(135deg, #003d9b 0%, #3b5482 100%);
+    background: linear-gradient(135deg, #0354c8 0%, #3b5482 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -31,7 +31,7 @@ body {
     position: absolute;
     inset: -2px;
     border-radius: 0.85rem;
-    background: linear-gradient(135deg, #003d9b, #d7e2ff);
+    background: linear-gradient(135deg, #0354c8, #d7e2ff);
     z-index: -1;
     opacity: 0.5;
 }
@@ -52,7 +52,7 @@ body {
 
 .gradient-stroke {
     border: 1px solid;
-    border-image-source: linear-gradient(135deg, #0052CC, #a855f7);
+    border-image-source: linear-gradient(135deg, #0354c8, #a855f7);
     border-image-slice: 1;
 }
 
@@ -112,7 +112,7 @@ body {
 }
 
 .ai-gradient-text {
-    background: linear-gradient(to right, #0052cc, #8a2be2);
+    background: linear-gradient(to right, #0354c8, #8a2be2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
