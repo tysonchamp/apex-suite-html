@@ -45,6 +45,12 @@
        <priority>0.6400</priority>
   </url>
   <url>
+       <loc>https://apexsuitecloud.com/restaurant-erp</loc>
+       <lastmod>2026-07-20T18:32:40+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
        <loc>https://apexsuitecloud.com/faqs</loc>
        <lastmod>2026-07-20T18:32:40+00:00</lastmod>
        <changefreq>daily</changefreq>
