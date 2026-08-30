@@ -32,20 +32,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (btnMonthly && btnAnnual) {
         function setPricing(isAnnual) {
+            const activeClassesStr = btnMonthly.getAttribute('data-active-classes') || 'bg-white text-primary shadow-sm border-outline-variant';
+            const inactiveClassesStr = btnMonthly.getAttribute('data-inactive-classes') || 'text-on-surface-variant border-transparent';
+            
+            const activeClasses = activeClassesStr.split(' ');
+            const inactiveClasses = inactiveClassesStr.split(' ');
+
             if(isAnnual) {
-                btnAnnual.classList.add('bg-white', 'text-primary', 'shadow-sm', 'border-outline-variant');
-                btnAnnual.classList.remove('text-on-surface-variant', 'border-transparent');
+                btnAnnual.classList.add(...activeClasses);
+                btnAnnual.classList.remove(...inactiveClasses);
                 
-                btnMonthly.classList.remove('bg-white', 'text-primary', 'shadow-sm', 'border-outline-variant');
-                btnMonthly.classList.add('text-on-surface-variant', 'border-transparent');
+                btnMonthly.classList.remove(...activeClasses);
+                btnMonthly.classList.add(...inactiveClasses);
 
                 priceElements.forEach(el => el.textContent = el.getAttribute('data-annual'));
             } else {
-                btnMonthly.classList.add('bg-white', 'text-primary', 'shadow-sm', 'border-outline-variant');
-                btnMonthly.classList.remove('text-on-surface-variant', 'border-transparent');
+                btnMonthly.classList.add(...activeClasses);
+                btnMonthly.classList.remove(...inactiveClasses);
                 
-                btnAnnual.classList.remove('bg-white', 'text-primary', 'shadow-sm', 'border-outline-variant');
-                btnAnnual.classList.add('text-on-surface-variant', 'border-transparent');
+                btnAnnual.classList.remove(...activeClasses);
+                btnAnnual.classList.add(...inactiveClasses);
 
                 priceElements.forEach(el => el.textContent = el.getAttribute('data-monthly'));
             }
