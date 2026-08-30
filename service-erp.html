@@ -315,7 +315,14 @@
     <section class="px-margin-mobile md:px-margin-desktop max-w-5xl mx-auto py-xl">
       <div class="text-center mb-xl">
         <h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Simple, Transparent Pricing</h2>
-        <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Choose the plan that fits your operational needs.</p>
+        <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto mb-lg">Choose the plan that fits your operational needs.</p>
+
+        <div class="flex justify-center mt-8">
+            <div class="bg-surface-container-low p-1 rounded-lg inline-flex">
+                <button id="toggle-monthly" class="px-6 py-2 rounded-md font-label-md bg-white text-primary shadow-sm border border-outline-variant transition-all">Monthly</button>
+                <button id="toggle-annual" class="px-6 py-2 rounded-md font-label-md text-on-surface-variant border border-transparent hover:text-primary transition-all">Yearly</button>
+            </div>
+        </div>
       </div>
       
       <div class="grid grid-cols-1 md:grid-cols-2 gap-lg max-w-4xl mx-auto">
@@ -326,8 +333,8 @@
               <span class="font-label-sm text-on-surface-variant font-semibold">Web Only</span>
             </div>
             <div class="flex items-baseline gap-2 mb-sm">
-              <span class="font-headline-xl text-headline-xl font-bold text-on-surface">₹3,000</span>
-              <span class="font-label-md text-on-surface-variant">/ yearly</span>
+              <span class="font-headline-xl text-headline-xl font-bold text-on-surface" data-monthly="₹250" data-annual="₹3,000">₹250</span>
+              <span class="font-label-md text-on-surface-variant" data-monthly="/ monthly" data-annual="/ yearly">/ monthly</span>
             </div>
             <p class="font-body-md text-on-surface-variant">Full access to all 15 modules on our cloud web application.</p>
           </div>
@@ -362,8 +369,8 @@
               <span class="font-label-sm text-white font-semibold">Web + Mobile</span>
             </div>
             <div class="flex items-baseline gap-2 mb-sm">
-              <span class="font-headline-xl text-headline-xl font-bold text-white">₹5,000</span>
-              <span class="font-label-md text-white/80">/ yearly</span>
+              <span class="font-headline-xl text-headline-xl font-bold text-white" data-monthly="₹416" data-annual="₹5,000">₹416</span>
+              <span class="font-label-md text-white/80" data-monthly="/ monthly" data-annual="/ yearly">/ monthly</span>
             </div>
             <p class="font-body-md text-white/90">Maximum flexibility with native mobile apps for your team on the go.</p>
           </div>

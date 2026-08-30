@@ -117,12 +117,20 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const totalPrice = document.getElementById('total-price');
     
-    const BASE_COST = 18000;
-    const BIZ_COST = 10000;
-    const LOC_COST = 3500;
-    const STAFF_COST = 1200;
+    let isMonthly = true;
     
+    const btnMonthly = document.getElementById('toggle-monthly');
+    const btnAnnual = document.getElementById('toggle-annual');
+    if (btnMonthly && btnAnnual) {
+        btnMonthly.addEventListener('click', () => { isMonthly = true; calculate(); });
+        btnAnnual.addEventListener('click', () => { isMonthly = false; calculate(); });
+    }
+
     function calculate() {
+        const BASE_COST = isMonthly ? 1500 : 18000;
+        const BIZ_COST = isMonthly ? 833 : 10000;
+        const LOC_COST = isMonthly ? 292 : 3500;
+        const STAFF_COST = isMonthly ? 100 : 1200;
         const extraBiz = parseInt(inputBiz.value);
         const extraLoc = parseInt(inputLoc.value);
         const extraStaff = parseInt(inputStaff.value);

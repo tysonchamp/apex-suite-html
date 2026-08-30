@@ -307,7 +307,14 @@
     <section class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto py-xl">
       <div class="text-center mb-xl">
         <h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Affordable Plans for Small Business</h2>
-        <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Choose the setup that best fits your retail operation.</p>
+        <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto mb-lg">Choose the setup that best fits your retail operation.</p>
+
+        <div class="flex justify-center mt-8">
+            <div class="bg-surface-container-low p-1 rounded-lg inline-flex">
+                <button id="toggle-monthly" class="px-6 py-2 rounded-md font-label-md bg-white text-primary shadow-sm border border-outline-variant transition-all">Monthly</button>
+                <button id="toggle-annual" class="px-6 py-2 rounded-md font-label-md text-on-surface-variant border border-transparent hover:text-primary transition-all">Yearly</button>
+            </div>
+        </div>
       </div>
       
       <div class="grid grid-cols-1 md:grid-cols-3 gap-lg max-w-6xl mx-auto items-stretch">
@@ -318,8 +325,8 @@
               <span class="font-label-sm text-on-surface-variant font-semibold">Mobile Only</span>
             </div>
             <div class="flex items-baseline gap-2 mb-sm">
-              <span class="font-headline-xl text-headline-xl font-bold text-on-surface">₹1,500</span>
-              <span class="font-label-md text-on-surface-variant">/ yearly</span>
+              <span class="font-headline-xl text-headline-xl font-bold text-on-surface" data-monthly="₹125" data-annual="₹1,500">₹125</span>
+              <span class="font-label-md text-on-surface-variant" data-monthly="/ monthly" data-annual="/ yearly">/ monthly</span>
             </div>
             <p class="font-body-md text-on-surface-variant text-sm">Perfect for mobile vendors or shops without a desktop counter.</p>
           </div>
@@ -350,8 +357,8 @@
               <span class="font-label-sm text-white font-semibold">Web + Mobile</span>
             </div>
             <div class="flex items-baseline gap-2 mb-sm">
-              <span class="font-headline-xl text-headline-xl font-bold text-white">₹4,000</span>
-              <span class="font-label-md text-white/80">/ yearly</span>
+              <span class="font-headline-xl text-headline-xl font-bold text-white" data-monthly="₹333" data-annual="₹4,000">₹333</span>
+              <span class="font-label-md text-white/80" data-monthly="/ monthly" data-annual="/ yearly">/ monthly</span>
             </div>
             <p class="font-body-md text-white/90 text-sm">The complete package. Counter billing plus mobile inventory management.</p>
           </div>
@@ -385,8 +392,8 @@
               <span class="font-label-sm text-on-surface-variant font-semibold">Web Based</span>
             </div>
             <div class="flex items-baseline gap-2 mb-sm">
-              <span class="font-headline-xl text-headline-xl font-bold text-on-surface">₹3,000</span>
-              <span class="font-label-md text-on-surface-variant">/ yearly</span>
+              <span class="font-headline-xl text-headline-xl font-bold text-on-surface" data-monthly="₹250" data-annual="₹3,000">₹250</span>
+              <span class="font-label-md text-on-surface-variant" data-monthly="/ monthly" data-annual="/ yearly">/ monthly</span>
             </div>
             <p class="font-body-md text-on-surface-variant text-sm">Traditional counter setup with desktop POS and thermal printing.</p>
           </div>
